@@ -25,5 +25,14 @@
       <description>Esben og Hund </description>
     </item>
     
+    <item>
+      <title>Virker det?</title>
+      <link>https://esbenbl.github.io/site_host/posts/det_virker_post/</link>
+      <pubDate>Thu, 02 Dec 2021 15:56:05 +0100</pubDate>
+      
+      <guid>https://esbenbl.github.io/site_host/posts/det_virker_post/</guid>
+      <description>DET VIRKER GANON! </description>
+    </item>
+    
   </channel>
 </rss>
