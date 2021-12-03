@@ -6,26 +6,6 @@
     <description>Recent content in Introduction on Communities of social science</description>
     <generator>Hugo -- gohugo.io</generator><atom:link href="https://esbenbl.github.io/site_host/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>With ToC</title>
-      <link>https://esbenbl.github.io/site_host/docs/example/table-of-contents/with-toc/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://esbenbl.github.io/site_host/docs/example/table-of-contents/with-toc/</guid>
-      <description>Caput vino delphine in tamen vias#Cognita laeva illo fracta#Lorem markdownum pavent auras, surgit nunc cingentibus libet Laomedonque que est. Pastor An arbor filia foedat, ne fugit aliter, per. Helicona illas et callida neptem est Oresitrophos caput, dentibus est venit. Tenet reddite famuli praesentem fortibus, quaeque vis foret si frondes gelidos gravidae circumtulit inpulit armenta nativum.
- Te at cruciabere vides rubentis manebo Maturuit in praetemptat ruborem ignara postquam habitasse Subitarum supplevit quoque fontesque venabula spretis modo Montis tot est mali quasque gravis Quinquennem domus arsit ipse Pellem turis pugnabant locavit  Natus quaerere#Pectora et sine mulcere, coniuge dum tincta incurvae.</description>
-    </item>
-    
-    <item>
-      <title>Without ToC</title>
-      <link>https://esbenbl.github.io/site_host/docs/example/table-of-contents/without-toc/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://esbenbl.github.io/site_host/docs/example/table-of-contents/without-toc/</guid>
-      <description>At me ipso nepotibus nunc celebratior genus#Tanto oblite#Lorem markdownum pectora novis patenti igne sua opus aurae feras materiaque illic demersit imago et aristas questaque posset. Vomit quoque suo inhaesuro clara. Esse cumque, per referri triste. Ut exponit solisque communis in tendens vincetis agisque iamque huic bene ante vetat omina Thebae rates. Aeacus servat admonitu concidit, ad resimas vultus et rugas vultu dignamque Siphnon.
-Quam iugulum regia simulacra, plus meruit humo pecorumque haesit, ab discedunt dixit: ritu pharetramque.</description>
-    </item>
-    
-    <item>
       <title>Creating a New Theme</title>
       <link>https://esbenbl.github.io/site_host/posts/creating-a-new-theme/</link>
       <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
@@ -37,22 +17,36 @@ We&amp;rsquo;ll start with creating a new site with a very basic template.</desc
     
     <item>
       <title></title>
-      <link>https://esbenbl.github.io/site_host/docs/example/collapsed/3rd-level/4th-level/</link>
+      <link>https://esbenbl.github.io/site_host/docs/Analysis/hsbm/drop_down/drop_down/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://esbenbl.github.io/site_host/docs/example/collapsed/3rd-level/4th-level/</guid>
-      <description>4th Level of Menu#Caesorum illa tu sentit micat vestes papyriferi#Inde aderam facti; Theseus vis de tauri illa peream. Oculos uberaque non regisque vobis cursuque, opus venit quam vulnera. Et maiora necemque, lege modo; gestanda nitidi, vero? Dum ne pectoraque testantur.
-Venasque repulsa Samos qui, exspectatum eram animosque hinc, aut manes, Assyrii. Cupiens auctoribus pariter rubet, profana magni super nocens. Vos ius sibilat inpar turba visae iusto!</description>
+      <guid>https://esbenbl.github.io/site_host/docs/Analysis/hsbm/drop_down/drop_down/</guid>
+      <description>Drop-Down Ganon#Det virker med drop down</description>
     </item>
     
     <item>
       <title></title>
-      <link>https://esbenbl.github.io/site_host/docs/example/hidden/</link>
+      <link>https://esbenbl.github.io/site_host/docs/Analysis/nx_characteristic/basic_stats/basic_stats/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://esbenbl.github.io/site_host/docs/example/hidden/</guid>
-      <description>This page is hidden in menu#Quondam non pater est dignior ille Eurotas#Latent te facies#Lorem markdownum arma ignoscas vocavit quoque ille texit mandata mentis ultimus, frementes, qui in vel. Hippotades Peleus pennas conscia cuiquam Caeneus quas.
- Pater demittere evincitque reddunt Maxime adhuc pressit huc Danaas quid freta Soror ego Luctus linguam saxa ultroque prior Tatiumque inquit Saepe liquitur subita superata dederat Anius sudor  Cum honorum Latona#O fallor in sustinui iussorum equidem.</description>
+      <guid>https://esbenbl.github.io/site_host/docs/Analysis/nx_characteristic/basic_stats/basic_stats/</guid>
+      <description>Basic Statistics#Below, we plot the network, excluding singleton nodes:
+The plot is indeed interesting.
+Further, we present the degree distribution of the network.
+Here is the in-degree distribution:
+And here is the out-degree distribution:
+How about that, Ganon?</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://esbenbl.github.io/site_host/docs/Analysis/nx_characteristic/community/community/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://esbenbl.github.io/site_host/docs/Analysis/nx_characteristic/community/community/</guid>
+      <description>Community Detection#We have used Louvain Partition to make communities.
+Compare this to the partition based on field
+Note that this is based on the GCC.</description>
     </item>
     
     <item>
