@@ -6,6 +6,20 @@
     <description>Recent content in Introduction on Communities of social science</description>
     <generator>Hugo -- gohugo.io</generator><atom:link href="https://esbenbl.github.io/site_host/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Basic Statistics</title>
+      <link>https://esbenbl.github.io/site_host/docs/Analysis/nx_characteristic/basic_stats/basic_stats/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://esbenbl.github.io/site_host/docs/Analysis/nx_characteristic/basic_stats/basic_stats/</guid>
+      <description>Basic Statistics#Below, we plot the network, excluding singleton nodes:
+The plot is indeed interesting.
+Further, we present the degree distribution of the network.
+Here is the in-degree distribution:
+And here is the out-degree distribution:
+How about that, Ganon?</description>
+    </item>
+    
+    <item>
       <title>Creating a New Theme</title>
       <link>https://esbenbl.github.io/site_host/posts/creating-a-new-theme/</link>
       <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
@@ -21,21 +35,8 @@ We&amp;rsquo;ll start with creating a new site with a very basic template.</desc
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://esbenbl.github.io/site_host/docs/Analysis/hsbm/drop_down/drop_down/</guid>
-      <description>Drop-Down Ganon#Det virker med drop down</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://esbenbl.github.io/site_host/docs/Analysis/nx_characteristic/basic_stats/basic_stats/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://esbenbl.github.io/site_host/docs/Analysis/nx_characteristic/basic_stats/basic_stats/</guid>
-      <description>Basic Statistics#Below, we plot the network, excluding singleton nodes:
-The plot is indeed interesting.
-Further, we present the degree distribution of the network.
-Here is the in-degree distribution:
-And here is the out-degree distribution:
-How about that, Ganon?</description>
+      <description>Drop-Down Ganon#Det virker med drop down
+</description>
     </item>
     
     <item>
@@ -152,6 +153,16 @@ To override the initialization config for Mermaid, create a mermaid.json file in
       <description>Tabs#Tabs let you organize content by context, for example installation instructions for each supported platform.
 {{&amp;lt; tabs &amp;#34;uniqueid&amp;#34; &amp;gt;}} {{&amp;lt; tab &amp;#34;MacOS&amp;#34; &amp;gt;}} # MacOS Content {{&amp;lt; /tab &amp;gt;}} {{&amp;lt; tab &amp;#34;Linux&amp;#34; &amp;gt;}} # Linux Content {{&amp;lt; /tab &amp;gt;}} {{&amp;lt; tab &amp;#34;Windows&amp;#34; &amp;gt;}} # Windows Content {{&amp;lt; /tab &amp;gt;}} {{&amp;lt; /tabs &amp;gt;}} Example#MacOSMacOS#This is tab MacOS content.
 Lorem markdownum insigne. Olympo signis Delphis!</description>
+    </item>
+    
+    <item>
+      <title>Louvain Modularity</title>
+      <link>https://esbenbl.github.io/site_host/docs/the_project/Modularity/modularity/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://esbenbl.github.io/site_host/docs/the_project/Modularity/modularity/</guid>
+      <description>Louvain Modularity#We optimize modularity based on the Louvian Partition Algorithm, which is:
+\[\Delta M=\left[\frac{\sum_{in}&amp;#43;2k_{i,in}}{2W} - \left(\frac{\sum_{tot}&amp;#43;k_{i}}{2W}\right)^2 \right] - \left[\frac{\sum_{in}}{2W} - \left(\frac{\sum_{tot}}{2W}\right)^2 - \left(\frac{k_{i}}{2W}\right)^2 \right]\]</description>
     </item>
     
   </channel>
