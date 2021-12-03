@@ -12,7 +12,7 @@
       
       <guid>https://esbenbl.github.io/site_host/docs/the_project/Modularity/modularity/</guid>
       <description>Louvain Modularity#We optimize modularity based on the Louvian Partition Algorithm, which is:
-\[\Delta M=\left[\frac{\sum_{in}&amp;#43;2k_{i,in}}{2W} - \left(\frac{\sum_{tot}&amp;#43;k_{i}}{2W}\right)^2 \right] - \left[\frac{\sum_{in}}{2W} - \left(\frac{\sum_{tot}}{2W}\right)^2 - \left(\frac{k_{i}}{2W}\right)^2 \right]\]</description>
+\[\Delta M=\left[\frac{\sum_{in}&amp;#43;2k_{i,in}}{2W} - \left(\frac{\sum_{tot}&amp;#43;k_{i}}{2W}\right)^2 \right] - \left[\frac{\sum_{in}}{2W} - \left(\frac{\sum_{tot}}{2W}\right)^2 - \left(\frac{k_{i}}{2W}\right)^2 \right]\]Is used to make these networks</description>
     </item>
     
   </channel>
