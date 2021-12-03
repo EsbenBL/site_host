@@ -1,46 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on Virker det med Desktop Ganon også?? OG ASGEr</title>
-    <link>https://esbenbl.github.io/site_host/posts/</link>
-    <description>Recent content in Posts on Virker det med Desktop Ganon også?? OG ASGEr</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Thu, 02 Dec 2021 15:56:05 +0100</lastBuildDate><atom:link href="https://esbenbl.github.io/site_host/posts/index.xml" rel="self" type="application/rss+xml" />
+    <title>Blog on Communities of social science</title>
+    <link>https://example.com/posts/</link>
+    <description>Recent content in Blog on Communities of social science</description>
+    <generator>Hugo -- gohugo.io</generator><atom:link href="https://example.com/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Calamity Ganon</title>
-      <link>https://esbenbl.github.io/site_host/posts/hvem/</link>
-      <pubDate>Thu, 02 Dec 2021 15:56:05 +0100</pubDate>
+      <title>Creating a New Theme</title>
+      <link>https://example.com/posts/creating-a-new-theme/</link>
+      <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://esbenbl.github.io/site_host/posts/hvem/</guid>
-      <description>The one </description>
-    </item>
-    
-    <item>
-      <title>My First Post</title>
-      <link>https://esbenbl.github.io/site_host/posts/my-first-post/</link>
-      <pubDate>Thu, 02 Dec 2021 15:56:05 +0100</pubDate>
-      
-      <guid>https://esbenbl.github.io/site_host/posts/my-first-post/</guid>
-      <description>Hund Og Esben </description>
-    </item>
-    
-    <item>
-      <title>Nu prøver vi noget andet</title>
-      <link>https://esbenbl.github.io/site_host/posts/second_post/</link>
-      <pubDate>Thu, 02 Dec 2021 15:56:05 +0100</pubDate>
-      
-      <guid>https://esbenbl.github.io/site_host/posts/second_post/</guid>
-      <description>Esben og Hund </description>
-    </item>
-    
-    <item>
-      <title>Virker det?</title>
-      <link>https://esbenbl.github.io/site_host/posts/det_virker_post/</link>
-      <pubDate>Thu, 02 Dec 2021 15:56:05 +0100</pubDate>
-      
-      <guid>https://esbenbl.github.io/site_host/posts/det_virker_post/</guid>
-      <description>DET VIRKER GANON! </description>
+      <guid>https://example.com/posts/creating-a-new-theme/</guid>
+      <description>Introduction#This tutorial will show you how to create a simple theme in Hugo. I assume that you are familiar with HTML, the bash command line, and that you are comfortable using Markdown to format content. I&amp;rsquo;ll explain how Hugo uses templates and how you can organize your templates to create a theme. I won&amp;rsquo;t cover using CSS to style your theme.
+We&amp;rsquo;ll start with creating a new site with a very basic template.</description>
     </item>
     
   </channel>
