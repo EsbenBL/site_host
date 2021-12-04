@@ -161,10 +161,14 @@ Lorem markdownum insigne. Olympo signis Delphis!</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://esbenbl.github.io/site_host/docs/the_project/Dataset/Datasets/</guid>
-      <description>Data#Here we have the different datasets which we used for the project. To load the data into python, we suggest you use the following code-snippet:
-import requests data = requests.get(dataset_url).json() Note that all of the datasets are in a json/dictionary format.
-Edgelist data
-Text dataset</description>
+      <description>Data#Here we have the datasets which we have used for the project. Here we link to the five social science lists, which our project is build upon.
+Sociologists
+Psychologists
+Political Scientists
+Economists
+Anthropologists
+Here we have the different datasets which we used for the project. To load the data into python, we suggest you use the following code-snippet:
+import requests data = requests.</description>
     </item>
     
     <item>
