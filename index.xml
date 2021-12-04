@@ -156,6 +156,17 @@ Lorem markdownum insigne. Olympo signis Delphis!</description>
     </item>
     
     <item>
+      <title>Datasets</title>
+      <link>https://esbenbl.github.io/site_host/docs/the_project/Dataset/Datasets/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://esbenbl.github.io/site_host/docs/the_project/Dataset/Datasets/</guid>
+      <description>Data#Here we have the different datasets which we used for the project:
+Edgelist data
+Text dataset</description>
+    </item>
+    
+    <item>
       <title>Louvain Modularity</title>
       <link>https://esbenbl.github.io/site_host/docs/the_project/Modularity/modularity/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
