@@ -3,18 +3,14 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Louvain Modularity#We optimize modularity based on the Louvian Partition Algorithm, which is:
-\[\Delta M=\left[\frac{\sum_{in}&#43;2k_{i,in}}{2W} - \left(\frac{\sum_{tot}&#43;k_{i}}{2W}\right)^2 \right] - \left[\frac{\sum_{in}}{2W} - \left(\frac{\sum_{tot}}{2W}\right)^2 - \left(\frac{k_{i}}{2W}\right)^2 \right]\]Is used to make these networks
-Rank of words based on TF →01234↓ Community0theorygameuniversitynewsocial1universityanthropologyamericannewstudy2psychologyuniversityworkchildnew3socialuniversitysociologyamericanwork4universitypoliticalamericannewscience5economiceconomicsuniversitytheorynew6universityeconomicseconomicresearchamerican7universityworksocialnewpolitical8universityeconomicresearchtradeinternational9womannewresearchzealandeconomics10universitygendersocietysylvialondon11universityreligiousreligionsociologymovement12–universityoxforddelhinew13universityeconomicsinternationaleconomictrade14politicalelectionbritishuniversity’15dereligionparisetle16universityinternationalpoliticalstateamerican17universityorganizationmanagementresearchsocial18raphilippineactcoauthorpresident19derundfrankfurtgermandie20germanhitlergermanywargovernment21gendersexualchildsexidentity ">
+<meta name="description" content="Louvain Modularity#The Louvain algorithm partitions the network by finding the partition that optimizes modularity, defined as (Barabási eq. 9.12): \(M = \sum_{c=1}^{n_c}\left[\frac{L_c}{L}-\left(\frac{k_c}{2L}\right)^2\right]\), where \(n_c\)is the number of communities/partitions, \(L\)is the total number of links in the network, \(L_c\)is the total number of links within community \(C_c\), and \(k_c\)is the total degree of the nodes in this community (including links to nodes outside community \(C_c\)).">
 <meta name="theme-color" content="#FFFFFF">
 <meta name="color-scheme" content="light dark"><meta property="og:title" content="Louvain Modularity" />
-<meta property="og:description" content="Louvain Modularity#We optimize modularity based on the Louvian Partition Algorithm, which is:
-\[\Delta M=\left[\frac{\sum_{in}&#43;2k_{i,in}}{2W} - \left(\frac{\sum_{tot}&#43;k_{i}}{2W}\right)^2 \right] - \left[\frac{\sum_{in}}{2W} - \left(\frac{\sum_{tot}}{2W}\right)^2 - \left(\frac{k_{i}}{2W}\right)^2 \right]\]Is used to make these networks
-Rank of words based on TF →01234↓ Community0theorygameuniversitynewsocial1universityanthropologyamericannewstudy2psychologyuniversityworkchildnew3socialuniversitysociologyamericanwork4universitypoliticalamericannewscience5economiceconomicsuniversitytheorynew6universityeconomicseconomicresearchamerican7universityworksocialnewpolitical8universityeconomicresearchtradeinternational9womannewresearchzealandeconomics10universitygendersocietysylvialondon11universityreligiousreligionsociologymovement12–universityoxforddelhinew13universityeconomicsinternationaleconomictrade14politicalelectionbritishuniversity’15dereligionparisetle16universityinternationalpoliticalstateamerican17universityorganizationmanagementresearchsocial18raphilippineactcoauthorpresident19derundfrankfurtgermandie20germanhitlergermanywargovernment21gendersexualchildsexidentity " />
+<meta property="og:description" content="Louvain Modularity#The Louvain algorithm partitions the network by finding the partition that optimizes modularity, defined as (Barabási eq. 9.12): \(M = \sum_{c=1}^{n_c}\left[\frac{L_c}{L}-\left(\frac{k_c}{2L}\right)^2\right]\), where \(n_c\)is the number of communities/partitions, \(L\)is the total number of links in the network, \(L_c\)is the total number of links within community \(C_c\), and \(k_c\)is the total degree of the nodes in this community (including links to nodes outside community \(C_c\))." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://esbenbl.github.io/site_host/docs/Analysis/nx_characteristic/community/Modularity/modularity/" /><meta property="article:section" content="docs" />
 
-
+<meta property="article:modified_time" content="2021-12-05T17:45:20+01:00" />
 
 <title>Louvain Modularity | Network Communities of the Social Sciences</title>
 <link rel="manifest" href="https://esbenbl.github.io/site_host/manifest.json">
@@ -472,216 +468,105 @@ https://github.com/alex-shpak/hugo-book
   Louvain Modularity
   <a class="anchor" href="#louvain-modularity">#</a>
 </h1>
-<p>We optimize modularity based on the Louvian Partition Algorithm, which is:</p>
-
+<p>The Louvain algorithm partitions the network by finding the partition that optimizes modularity, defined as (Barabási eq. 9.12): 
 <link rel="stylesheet" href="https://esbenbl.github.io/site_host/katex/katex.min.css" />
 <script defer src="https://esbenbl.github.io/site_host/katex/katex.min.js"></script>
 <script defer src="https://esbenbl.github.io/site_host/katex/auto-render.min.js" onload="renderMathInElement(document.body);"></script><span>
-  \[
-\Delta M=\left[\frac{\sum_{in}&#43;2k_{i,in}}{2W} - \left(\frac{\sum_{tot}&#43;k_{i}}{2W}\right)^2 \right] - \left[\frac{\sum_{in}}{2W} - \left(\frac{\sum_{tot}}{2W}\right)^2 - \left(\frac{k_{i}}{2W}\right)^2 \right]\]
+  \(M = \sum_{c=1}^{n_c}\left[\frac{L_c}{L}-\left(\frac{k_c}{2L}\right)^2\right]\)
+</span>
+, where <span>
+  \(n_c\)
+</span>
+ is the number of communities/partitions, <span>
+  \(L\)
+</span>
+ is the total number of links in the network, <span>
+  \(L_c\)
+</span>
+ is the total number of links within community <span>
+  \(C_c\)
+</span>
+, and <span>
+  \(k_c\)
+</span>
+ is the total degree of the nodes in this community (including links to nodes outside community <span>
+  \(C_c\)
+</span>
+). The Louvain algorithm works in 2 steps:</p>
+<ul>
+<li><strong>1) Modularity optimization</strong>: Each node in the network is assigned to its own community. Sequentially, each node, <span>
+  \(i\)
+</span>
+, is moved to the neighboring community, <span>
+  \(j\)
+</span>
+, that leads to the maximum change in modularity, <span>
+  \(\Delta M\)
+</span>
+. This is done repeadtly and sequentially until <span>
+  \(\Delta M = 0\)
+</span>
+, i.e. there is no change in modularity by moving any node to another community.  The change in modularity, when moving node <span>
+  \(i\)
+</span>
+ from one community to another, is calculated as (Barabási eq 9.58);
+<span>
+  \[    
+     $$\Delta M=\left[\frac{\sum_{in}&#43;2k_{i,in}}{2W} - \left(\frac{\sum_{tot}&#43;k_{i}}{2W}\right)^2 \right] - \left[\frac{\sum_{in}}{2W} - \left(\frac{\sum_{tot}}{2W}\right)^2 - \left(\frac{k_{i}}{2W}\right)^2 \right] $$
+     \]
 </span>
 
-<p>Is used to make 
-  <a href="https://esbenbl.github.io/site_host/docs/Analysis/nx_characteristic/community/community/">these networks</a></p>
-
-<table border="0" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th>Rank of words based on TF →</th>
-      <th>0</th>
-      <th>1</th>
-      <th>2</th>
-      <th>3</th>
-      <th>4</th>
-    </tr>
-    <tr>
-      <th>↓ Community</th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>theory</td>
-      <td>game</td>
-      <td>university</td>
-      <td>new</td>
-      <td>social</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>university</td>
-      <td>anthropology</td>
-      <td>american</td>
-      <td>new</td>
-      <td>study</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>psychology</td>
-      <td>university</td>
-      <td>work</td>
-      <td>child</td>
-      <td>new</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>social</td>
-      <td>university</td>
-      <td>sociology</td>
-      <td>american</td>
-      <td>work</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>university</td>
-      <td>political</td>
-      <td>american</td>
-      <td>new</td>
-      <td>science</td>
-    </tr>
-    <tr>
-      <th>5</th>
-      <td>economic</td>
-      <td>economics</td>
-      <td>university</td>
-      <td>theory</td>
-      <td>new</td>
-    </tr>
-    <tr>
-      <th>6</th>
-      <td>university</td>
-      <td>economics</td>
-      <td>economic</td>
-      <td>research</td>
-      <td>american</td>
-    </tr>
-    <tr>
-      <th>7</th>
-      <td>university</td>
-      <td>work</td>
-      <td>social</td>
-      <td>new</td>
-      <td>political</td>
-    </tr>
-    <tr>
-      <th>8</th>
-      <td>university</td>
-      <td>economic</td>
-      <td>research</td>
-      <td>trade</td>
-      <td>international</td>
-    </tr>
-    <tr>
-      <th>9</th>
-      <td>woman</td>
-      <td>new</td>
-      <td>research</td>
-      <td>zealand</td>
-      <td>economics</td>
-    </tr>
-    <tr>
-      <th>10</th>
-      <td>university</td>
-      <td>gender</td>
-      <td>society</td>
-      <td>sylvia</td>
-      <td>london</td>
-    </tr>
-    <tr>
-      <th>11</th>
-      <td>university</td>
-      <td>religious</td>
-      <td>religion</td>
-      <td>sociology</td>
-      <td>movement</td>
-    </tr>
-    <tr>
-      <th>12</th>
-      <td>–</td>
-      <td>university</td>
-      <td>oxford</td>
-      <td>delhi</td>
-      <td>new</td>
-    </tr>
-    <tr>
-      <th>13</th>
-      <td>university</td>
-      <td>economics</td>
-      <td>international</td>
-      <td>economic</td>
-      <td>trade</td>
-    </tr>
-    <tr>
-      <th>14</th>
-      <td>political</td>
-      <td>election</td>
-      <td>british</td>
-      <td>university</td>
-      <td>’</td>
-    </tr>
-    <tr>
-      <th>15</th>
-      <td>de</td>
-      <td>religion</td>
-      <td>paris</td>
-      <td>et</td>
-      <td>le</td>
-    </tr>
-    <tr>
-      <th>16</th>
-      <td>university</td>
-      <td>international</td>
-      <td>political</td>
-      <td>state</td>
-      <td>american</td>
-    </tr>
-    <tr>
-      <th>17</th>
-      <td>university</td>
-      <td>organization</td>
-      <td>management</td>
-      <td>research</td>
-      <td>social</td>
-    </tr>
-    <tr>
-      <th>18</th>
-      <td>ra</td>
-      <td>philippine</td>
-      <td>act</td>
-      <td>coauthor</td>
-      <td>president</td>
-    </tr>
-    <tr>
-      <th>19</th>
-      <td>der</td>
-      <td>und</td>
-      <td>frankfurt</td>
-      <td>german</td>
-      <td>die</td>
-    </tr>
-    <tr>
-      <th>20</th>
-      <td>german</td>
-      <td>hitler</td>
-      <td>germany</td>
-      <td>war</td>
-      <td>government</td>
-    </tr>
-    <tr>
-      <th>21</th>
-      <td>gender</td>
-      <td>sexual</td>
-      <td>child</td>
-      <td>sex</td>
-      <td>identity</td>
-    </tr>
-  </tbody>
-</table>
+where <span>
+  \(\sum_{in}\)
+</span>
+ is the sum of all the weights of links inside the community, <span>
+  \(C_j\)
+</span>
+, that <span>
+  \(i\)
+</span>
+ is moved into (=<span>
+  \(L_{C_{j}}\)
+</span>
+ in an undirected network); <span>
+  \(\sum_{tot}\)
+</span>
+ is the sum of all the weights of the links to nodes in <span>
+  \(C_j\)
+</span>
+; <span>
+  \(k_i\)
+</span>
+ is the weighted degree of <span>
+  \(i\)
+</span>
+; <span>
+  \(k_{i,in}\)
+</span>
+ is the sum of the weights of the links between <span>
+  \(i\)
+</span>
+ and other nodes in <span>
+  \(C_j\)
+</span>
+; and <span>
+  \(W\)
+</span>
+ is the sum of the weights of all links in the network. If <span>
+  \(\Delta M &lt; 0\)
+</span>
+, <span>
+  \(i\)
+</span>
+ stays in its current community.</li>
+<li><strong>2) Community Aggregation</strong>: A weighted network is created as an aggregate of the communities from the previous step: The nodes in the weighted network are the communities from step 1, the edge weights are the sum of edges between communities, and edges within a community becomes 2 self-loops.</li>
+</ul>
+<p>When the network of step 2 has been created, step 1 and 2 can be repeated on the new network until there is no increase in modularity. Collectively, the 2 steps are called a pass (Barabási Chap. 9). The 2 steps in the Louvain Algorithm are depicted below, where they are repeated for 2 passes (Barabási Image 9.37):</p>
+<center>
+<img src="https://esbenbl.github.io/site_host/louvain.jpg" alt="drawing" style="width:750px;"/>
+</center>
+<p>
+  <a href="https://esbenbl.github.io/site_host/docs/Analysis/nx_characteristic/community/community/">Back to the community networks</a></p>
 </article>
  
       
