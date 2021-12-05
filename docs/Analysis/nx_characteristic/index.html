@@ -4,7 +4,9 @@
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="Network Characteristics#In this section, we present basic network characteristic of our network, and carry out community detection&hellip;just because.
-Basic StatisticsBasic Statistics#Below, we plot the network, excluding singleton nodes: The plot is indeed interesting. Further, we present the degree distribution of the network. Here is the in-degree distribution: And here is the out-degree distribution: How about that, Ganon?CommunityCommunity Detection#We have used Louvain Partition to make communities.">
+Basic Statistics We present the network, some degree distributions, and stuff like that.
+Community We see how communities are formed in the network, based on the link distribution.
+.nx_gif {max-width: 100%;}">
 <meta name="theme-color" content="#FFFFFF">
 <meta name="color-scheme" content="light dark"><meta property="og:title" content="Network Characteristics" />
 <meta property="og:description" content="" />
@@ -438,30 +440,33 @@ https://github.com/alex-shpak/hugo-book
   <a class="anchor" href="#network-characteristics">#</a>
 </h1>
 <p>In this section, we present basic network characteristic of our network, and carry out community detection&hellip;just because.</p>
-<dl>
+<div class="book-columns flex flex-wrap">
 
-  <dt>
-    <a href="https://esbenbl.github.io/site_host/docs/Analysis/nx_characteristic/basic_stats/basic_stats/">Basic Statistics</a>
-  </dt>
-  <dd class="markdown-inner">
-    Basic Statistics#Below, we plot the network, excluding singleton nodes:
-The plot is indeed interesting.
-Further, we present the degree distribution of the network.
-Here is the in-degree distribution:
-And here is the out-degree distribution:
-How about that, Ganon?
-  </dd>
+  <div class="flex-even markdown-inner">
+    <br>
+<p>
+  <a href="https://esbenbl.github.io/site_host/docs/Analysis/nx_characteristic/basic_stats/basic_stats/"><strong>Basic Statistics</strong></a>
+<br>
+We present the network, some degree distributions, and stuff like that.</p>
+<p>
+  <a href="https://esbenbl.github.io/site_host/docs/Analysis/nx_characteristic/community/community/"><strong>Community</strong></a>
+<br>
+We see how communities are formed in the network, based on the link distribution.</p>
 
-  <dt>
-    <a href="https://esbenbl.github.io/site_host/docs/Analysis/nx_characteristic/community/community/">Community</a>
-  </dt>
-  <dd class="markdown-inner">
-    Community Detection#We have used Louvain Partition to make communities.
-Compare this to the partition based on field
-Note that this is based on the GCC.
-  </dd>
+  </div>
 
-</dl>
+  <div class="flex-even markdown-inner">
+    <style>
+.nx_gif {
+  max-width: 100%;
+
+}
+</style>
+<img src="https://jonmgomes.com/wp-content/uploads/2020/03/Network_Diagram_GIF_5_seconds.gif" class="nx_gif">
+
+  </div>
+
+</div>
 
 </article>
  

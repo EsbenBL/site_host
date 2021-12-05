@@ -10,7 +10,7 @@ The Wikipedia Lists#Here we link to the five social science lists, which our 
   Political Scientists
   Economists
   Anthropologists
-  Here we have the different datasets which we used for the project. To load the data into python, we suggest you use the following code-snippet:">
+  Here we have the different datasets which we used for the project.">
 <meta name="theme-color" content="#FFFFFF">
 <meta name="color-scheme" content="light dark"><meta property="og:title" content="Datasets" />
 <meta property="og:description" content="Data#Here we have the datasets which we have used for the project.
@@ -20,11 +20,11 @@ The Wikipedia Lists#Here we link to the five social science lists, which our 
   Political Scientists
   Economists
   Anthropologists
-  Here we have the different datasets which we used for the project. To load the data into python, we suggest you use the following code-snippet:" />
+  Here we have the different datasets which we used for the project." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://esbenbl.github.io/site_host/docs/the_project/Dataset/Datasets/" /><meta property="article:section" content="docs" />
 
-<meta property="article:modified_time" content="2021-12-04T15:11:32+01:00" />
+<meta property="article:modified_time" content="2021-12-04T23:46:04+01:00" />
 
 <title>Datasets | Network Communities of the Social Sciences</title>
 <link rel="manifest" href="https://esbenbl.github.io/site_host/manifest.json">
@@ -457,7 +457,10 @@ https://github.com/alex-shpak/hugo-book
   <a class="anchor" href="#the-wikipedia-lists">#</a>
 </h2>
 <p>Here we link to the five social science lists, which our project is build upon.</p>
-<ul>
+<div class="book-columns flex flex-wrap">
+
+  <div class="flex-even markdown-inner">
+    <ul>
 <li>
 <p>
   <a href="https://en.wikipedia.org/wiki/List_of_sociologists">Sociologists</a></p>
@@ -479,6 +482,18 @@ https://github.com/alex-shpak/hugo-book
   <a href="https://en.wikipedia.org/wiki/List_of_anthropologists">Anthropologists</a></p>
 </li>
 </ul>
+
+  </div>
+
+  <div class="flex-even markdown-inner">
+    <left>
+<img src="https://i.giphy.com/media/3oKIPpFhwsMNrRIjN6/giphy.webp" width=400 height=220>
+</left>
+
+  </div>
+
+</div>
+
 <p>Here we have the different datasets which we used for the project. To load the data into python, we suggest you use the following code-snippet:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">import requests
 data = requests.get(dataset_url).json() 
