@@ -1,0 +1,931 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="TF-IDF within the Communities#TFTF of the scientific disciplines#Rank of words based on TF →01234↓ Community0theorygameuniversitynewsocial1universityanthropologyamericannewstudy2psychologyuniversityworkchildnew3socialuniversitysociologyamericanwork4universitypoliticalamericannewscience5economiceconomicsuniversitytheorynew6universityeconomicseconomicresearchamerican7universityworksocialnewpolitical8universityeconomicresearchtradeinternational9womannewresearchzealandeconomics10universitygendersocietysylvialondon11universityreligiousreligionsociologymovement12–universityoxforddelhinew13universityeconomicsinternationaleconomictrade14politicalelectionbritishuniversity’15dereligionparisetle16universityinternationalpoliticalstateamerican17universityorganizationmanagementresearchsocial18raphilippineactcoauthorpresident19derundfrankfurtgermandie20germanhitlergermanywargovernment21gendersexualchildsexidentityHere, we writes something clever about the TF-stuff.">
+<meta name="theme-color" content="#FFFFFF">
+<meta name="color-scheme" content="light dark"><meta property="og:title" content="TF-IDF within the Communities" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://esbenbl.github.io/site_host/docs/Analysis/text_analysis/tf_idf_com/" />
+
+<title>TF-IDF within the Communities | Network Communities of the Social Sciences</title>
+<link rel="manifest" href="https://esbenbl.github.io/site_host/manifest.json">
+<link rel="icon" href="https://esbenbl.github.io/site_host/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="https://esbenbl.github.io/site_host/book.min.95d69eb6bad8b9707ff2b5d8d9e31ce70a1b84f2ed7ffaf665ffcf00aa7993bd.css" integrity="sha256-ldaetrrYuXB/8rXY2eMc5wobhPLtf/r2Zf/PAKp5k70=" crossorigin="anonymous"><link rel="alternate" type="application/rss+xml" href="https://esbenbl.github.io/site_host/docs/Analysis/text_analysis/tf_idf_com/index.xml" title="Network Communities of the Social Sciences" />
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  
+</head>
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="https://esbenbl.github.io/site_host/"><span>Network Communities of the Social Sciences</span>
+  </a>
+</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <ul>
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <a href="https://esbenbl.github.io/site_host/docs/the_project/" class="">The Project</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://esbenbl.github.io/site_host/docs/the_project/Dataset/Datasets/" class="">Datasets</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <a href="https://esbenbl.github.io/site_host/docs/Analysis/" class="">Analysis</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-68e2ea6c27bd229d62d39f896b1f743d" class="toggle"  />
+    <label for="section-68e2ea6c27bd229d62d39f896b1f743d" class="flex justify-between">
+      <a href="https://esbenbl.github.io/site_host/docs/Analysis/nx_characteristic/" class="">Network Characteristics</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://esbenbl.github.io/site_host/docs/Analysis/nx_characteristic/basic_stats/basic_stats/" class="">Basic Statistics</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-2554005d4f3bd19b5b37eee444fd4e29" class="toggle"  />
+    <label for="section-2554005d4f3bd19b5b37eee444fd4e29" class="flex justify-between">
+      <a href="https://esbenbl.github.io/site_host/docs/Analysis/nx_characteristic/community/" class="">Communities</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://esbenbl.github.io/site_host/docs/Analysis/nx_characteristic/community/Modularity/modularity/" class="">Louvain Modularity</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-775c8f3a0ae7cadabf98eb94d5f359b9" class="toggle" checked />
+    <label for="section-775c8f3a0ae7cadabf98eb94d5f359b9" class="flex justify-between">
+      <a href="https://esbenbl.github.io/site_host/docs/Analysis/text_analysis/" class="">Text Analysis</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://esbenbl.github.io/site_host/docs/Analysis/text_analysis/tf_idf_field/" class="">TF-IDF within the Disciplines</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://esbenbl.github.io/site_host/docs/Analysis/text_analysis/tf_idf_com/" class=" active">TF-IDF within the Communities</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <span>Shortcodes</span>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://esbenbl.github.io/site_host/docs/shortcodes/buttons/" class="">Buttons</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://esbenbl.github.io/site_host/docs/shortcodes/columns/" class="">Columns</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://esbenbl.github.io/site_host/docs/shortcodes/details/" class="">Details</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://esbenbl.github.io/site_host/docs/shortcodes/expand/" class="">Expand</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://esbenbl.github.io/site_host/docs/shortcodes/hints/" class="">Hints</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://esbenbl.github.io/site_host/docs/shortcodes/katex/" class="">Katex</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://esbenbl.github.io/site_host/docs/shortcodes/mermaid/" class="">Mermaid</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-d3fc1bf6d66cd84b896a0af9f40cb1d5" class="toggle"  />
+    <label for="section-d3fc1bf6d66cd84b896a0af9f40cb1d5" class="flex justify-between">
+      <a href="https://esbenbl.github.io/site_host/docs/shortcodes/section/" class="">Section</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://esbenbl.github.io/site_host/docs/shortcodes/section/first-page/" class="">First Page</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://esbenbl.github.io/site_host/docs/shortcodes/section/second-page/" class="">Second Page</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://esbenbl.github.io/site_host/docs/shortcodes/tabs/" class="">Tabs</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+  
+<ul>
+  
+  <li>
+    <a href="https://github.com/SocialComplexityLab/socialgraphs2021.git" target="_blank" rel="noopener">
+        Examination in Social Graph 2021
+      </a>
+  </li>
+  
+  <li>
+    <a href="https://github.com/EsbenBL/social_graph_exam.git" target="_blank" rel="noopener">
+        Our Github
+      </a>
+  </li>
+  
+</ul>
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var a=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(b){localStorage.setItem("menu.scrollTop",a.scrollTop)}),a.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="https://esbenbl.github.io/site_host/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>TF-IDF within the Communities</strong>
+
+  <label for="toc-control">
+    
+  </label>
+</div>
+
+
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown"><h1 id="tf-idf-within-the-communities">
+  TF-IDF within the Communities
+  <a class="anchor" href="#tf-idf-within-the-communities">#</a>
+</h1>
+
+
+
+
+<div class="book-tabs"><input type="radio" class="toggle" name="tabs-uniqueid" id="tabs-uniqueid-0" checked="checked" />
+  <label for="tabs-uniqueid-0">TF</label>
+  <div class="book-tabs-content markdown-inner"><h1 id="tf-of-the-scientific-disciplines">
+  TF of the scientific disciplines
+  <a class="anchor" href="#tf-of-the-scientific-disciplines">#</a>
+</h1>
+<table border="0" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Rank of words based on TF →</th>
+      <th>0</th>
+      <th>1</th>
+      <th>2</th>
+      <th>3</th>
+      <th>4</th>
+    </tr>
+    <tr>
+      <th>↓ Community</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>theory</td>
+      <td>game</td>
+      <td>university</td>
+      <td>new</td>
+      <td>social</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>university</td>
+      <td>anthropology</td>
+      <td>american</td>
+      <td>new</td>
+      <td>study</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>psychology</td>
+      <td>university</td>
+      <td>work</td>
+      <td>child</td>
+      <td>new</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>social</td>
+      <td>university</td>
+      <td>sociology</td>
+      <td>american</td>
+      <td>work</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>university</td>
+      <td>political</td>
+      <td>american</td>
+      <td>new</td>
+      <td>science</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>economic</td>
+      <td>economics</td>
+      <td>university</td>
+      <td>theory</td>
+      <td>new</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>university</td>
+      <td>economics</td>
+      <td>economic</td>
+      <td>research</td>
+      <td>american</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>university</td>
+      <td>work</td>
+      <td>social</td>
+      <td>new</td>
+      <td>political</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>university</td>
+      <td>economic</td>
+      <td>research</td>
+      <td>trade</td>
+      <td>international</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>woman</td>
+      <td>new</td>
+      <td>research</td>
+      <td>zealand</td>
+      <td>economics</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>university</td>
+      <td>gender</td>
+      <td>society</td>
+      <td>sylvia</td>
+      <td>london</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>university</td>
+      <td>religious</td>
+      <td>religion</td>
+      <td>sociology</td>
+      <td>movement</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>–</td>
+      <td>university</td>
+      <td>oxford</td>
+      <td>delhi</td>
+      <td>new</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>university</td>
+      <td>economics</td>
+      <td>international</td>
+      <td>economic</td>
+      <td>trade</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>political</td>
+      <td>election</td>
+      <td>british</td>
+      <td>university</td>
+      <td>’</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>de</td>
+      <td>religion</td>
+      <td>paris</td>
+      <td>et</td>
+      <td>le</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>university</td>
+      <td>international</td>
+      <td>political</td>
+      <td>state</td>
+      <td>american</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>university</td>
+      <td>organization</td>
+      <td>management</td>
+      <td>research</td>
+      <td>social</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>ra</td>
+      <td>philippine</td>
+      <td>act</td>
+      <td>coauthor</td>
+      <td>president</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>der</td>
+      <td>und</td>
+      <td>frankfurt</td>
+      <td>german</td>
+      <td>die</td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td>german</td>
+      <td>hitler</td>
+      <td>germany</td>
+      <td>war</td>
+      <td>government</td>
+    </tr>
+    <tr>
+      <th>21</th>
+      <td>gender</td>
+      <td>sexual</td>
+      <td>child</td>
+      <td>sex</td>
+      <td>identity</td>
+    </tr>
+  </tbody>
+</table>
+<p>Here, we writes something clever about the TF-stuff.</div><input type="radio" class="toggle" name="tabs-uniqueid" id="tabs-uniqueid-1"  />
+  <label for="tabs-uniqueid-1">TF-IDF</label>
+  <div class="book-tabs-content markdown-inner"><h1 id="tf-idf-of-the-scientific-disciplines">
+  TF-IDF of the scientific disciplines
+  <a class="anchor" href="#tf-idf-of-the-scientific-disciplines">#</a>
+</h1>
+<table border="0" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Rank of words based on TF-IDF →</th>
+      <th>0</th>
+      <th>1</th>
+      <th>2</th>
+      <th>3</th>
+      <th>4</th>
+    </tr>
+    <tr>
+      <th>↓ Community</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>hp</td>
+      <td>game</td>
+      <td>kreindler</td>
+      <td>mathematics</td>
+      <td>——</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>anthropology</td>
+      <td>anthropologist</td>
+      <td>anthropological</td>
+      <td>culture</td>
+      <td>language</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>psychology</td>
+      <td>child</td>
+      <td>psychological</td>
+      <td>mental</td>
+      <td>experimental</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>chicago</td>
+      <td>sociology</td>
+      <td>du</td>
+      <td>sociological</td>
+      <td>theory</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>political</td>
+      <td>portugal</td>
+      <td>portuguese</td>
+      <td>cavaco</td>
+      <td>israel</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>economics</td>
+      <td>economic</td>
+      <td>price</td>
+      <td>economist</td>
+      <td>rate</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>economics</td>
+      <td>econometrics</td>
+      <td>economic</td>
+      <td>auction</td>
+      <td>nobel</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>philosophy</td>
+      <td>idea</td>
+      <td>philosopher</td>
+      <td>la</td>
+      <td>french</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>usitc</td>
+      <td>cepr</td>
+      <td>integration</td>
+      <td>globotics</td>
+      <td>ganeshan</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>muldoon</td>
+      <td>zealand</td>
+      <td>feminist</td>
+      <td>raglan</td>
+      <td>waikato</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>sylvia</td>
+      <td>lancaster</td>
+      <td>gender</td>
+      <td>polity</td>
+      <td>sheller</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>scientology</td>
+      <td>religious</td>
+      <td>anson</td>
+      <td>brainwashing</td>
+      <td>religion</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>delhi</td>
+      <td>ashis</td>
+      <td>tehelka</td>
+      <td>csds</td>
+      <td>india</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>brander–model</td>
+      <td>sappington</td>
+      <td>brandermodel</td>
+      <td>canadian</td>
+      <td>economics</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>election</td>
+      <td>‘</td>
+      <td>macmillan</td>
+      <td>vol</td>
+      <td>pp</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>religieux</td>
+      <td>sectes</td>
+      <td>religion</td>
+      <td>du</td>
+      <td>cerf</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>war</td>
+      <td>soviet</td>
+      <td>state</td>
+      <td>vietnam</td>
+      <td>kenya</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>organizational</td>
+      <td>management</td>
+      <td>sensemaking</td>
+      <td>olsen</td>
+      <td>labormanagement</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>ra</td>
+      <td>philippine</td>
+      <td>estrada</td>
+      <td>macapagal</td>
+      <td>edsa</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>sexualforschung</td>
+      <td>der</td>
+      <td>sexualität</td>
+      <td>sexualwissenschaft</td>
+      <td>gießen</td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td>reichsbank</td>
+      <td>hitler</td>
+      <td>nuremberg</td>
+      <td>german</td>
+      <td>göring</td>
+    </tr>
+    <tr>
+      <th>21</th>
+      <td>camh</td>
+      <td>paraphilia</td>
+      <td>gender</td>
+      <td>dsm5</td>
+      <td>sexual</td>
+    </tr>
+  </tbody>
+</table>
+<p>Here, we writes something clever about the TF-IDF-stuff.</div></div>
+
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+
+
+  <script>(function(){function a(c){const a=window.getSelection(),b=document.createRange();b.selectNodeContents(c),a.removeAllRanges(),a.addRange(b)}document.querySelectorAll("pre code").forEach(b=>{b.addEventListener("click",function(c){a(b.parentElement),navigator.clipboard&&navigator.clipboard.writeText(b.parentElement.textContent)})})})()</script>
+
+
+ 
+        
+      </footer>
+
+      
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

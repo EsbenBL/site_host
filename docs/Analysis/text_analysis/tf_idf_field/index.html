@@ -3,33 +3,19 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Data#Here we have the datasets which we have used for the project.
-The Wikipedia Lists#Here we link to the five social science lists, which our project is build upon.
-  Sociologists
-  Psychologists
-  Political Scientists
-  Economists
-  Anthropologists
-  Here we have the different datasets which we used for the project.">
+<meta name="description" content="TF-IDF within the Disciplines#To find out which concept/content are most definitive for each of the scientific disciplines, we have calculate the term frequency (TF) as well as the term frequency - inverse document frequency (TF-IDF) for each of the 5 fields.
+Furthermore, we have also calculated both TF and TF-IDF for each of the 21 identified network communities, to see if the community partition was meaningsful with regard to the content of the wikipages.">
 <meta name="theme-color" content="#FFFFFF">
-<meta name="color-scheme" content="light dark"><meta property="og:title" content="Datasets" />
-<meta property="og:description" content="Data#Here we have the datasets which we have used for the project.
-The Wikipedia Lists#Here we link to the five social science lists, which our project is build upon.
-  Sociologists
-  Psychologists
-  Political Scientists
-  Economists
-  Anthropologists
-  Here we have the different datasets which we used for the project." />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://esbenbl.github.io/site_host/docs/the_project/Dataset/Datasets/" /><meta property="article:section" content="docs" />
+<meta name="color-scheme" content="light dark"><meta property="og:title" content="TF-IDF within the Disciplines" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://esbenbl.github.io/site_host/docs/Analysis/text_analysis/tf_idf_field/" />
 
-<meta property="article:modified_time" content="2021-12-04T23:46:04+01:00" />
-
-<title>Datasets | Network Communities of the Social Sciences</title>
+<title>TF-IDF within the Disciplines | Network Communities of the Social Sciences</title>
 <link rel="manifest" href="https://esbenbl.github.io/site_host/manifest.json">
 <link rel="icon" href="https://esbenbl.github.io/site_host/favicon.png" type="image/x-icon">
-<link rel="stylesheet" href="https://esbenbl.github.io/site_host/book.min.95d69eb6bad8b9707ff2b5d8d9e31ce70a1b84f2ed7ffaf665ffcf00aa7993bd.css" integrity="sha256-ldaetrrYuXB/8rXY2eMc5wobhPLtf/r2Zf/PAKp5k70=" crossorigin="anonymous"><!--
+<link rel="stylesheet" href="https://esbenbl.github.io/site_host/book.min.95d69eb6bad8b9707ff2b5d8d9e31ce70a1b84f2ed7ffaf665ffcf00aa7993bd.css" integrity="sha256-ldaetrrYuXB/8rXY2eMc5wobhPLtf/r2Zf/PAKp5k70=" crossorigin="anonymous"><link rel="alternate" type="application/rss+xml" href="https://esbenbl.github.io/site_host/docs/Analysis/text_analysis/tf_idf_field/index.xml" title="Network Communities of the Social Sciences" />
+<!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
 -->
@@ -87,7 +73,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="https://esbenbl.github.io/site_host/docs/the_project/Dataset/Datasets/" class=" active">Datasets</a>
+    <a href="https://esbenbl.github.io/site_host/docs/the_project/Dataset/Datasets/" class="">Datasets</a>
   
 
         </li>
@@ -186,7 +172,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <input type="checkbox" id="section-775c8f3a0ae7cadabf98eb94d5f359b9" class="toggle"  />
+    <input type="checkbox" id="section-775c8f3a0ae7cadabf98eb94d5f359b9" class="toggle" checked />
     <label for="section-775c8f3a0ae7cadabf98eb94d5f359b9" class="flex justify-between">
       <a href="https://esbenbl.github.io/site_host/docs/Analysis/text_analysis/" class="">Text Analysis</a>
     </label>
@@ -202,7 +188,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="https://esbenbl.github.io/site_host/docs/Analysis/text_analysis/tf_idf_field/" class="">TF-IDF within the Disciplines</a>
+    <a href="https://esbenbl.github.io/site_host/docs/Analysis/text_analysis/tf_idf_field/" class=" active">TF-IDF within the Disciplines</a>
   
 
           
@@ -464,7 +450,7 @@ https://github.com/alex-shpak/hugo-book
     <img src="https://esbenbl.github.io/site_host/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <strong>Datasets</strong>
+  <strong>TF-IDF within the Disciplines</strong>
 
   <label for="toc-control">
     
@@ -478,93 +464,172 @@ https://github.com/alex-shpak/hugo-book
 
       
       
-  <article class="markdown"><h1 id="data">
-  <strong>Data</strong>
-  <a class="anchor" href="#data">#</a>
+  <article class="markdown"><h1 id="tf-idf-within-the-disciplines">
+  TF-IDF within the Disciplines
+  <a class="anchor" href="#tf-idf-within-the-disciplines">#</a>
 </h1>
-<p>Here we have the datasets which we have used for the project.</p>
-<h2 id="the-wikipedia-lists">
-  The Wikipedia Lists
-  <a class="anchor" href="#the-wikipedia-lists">#</a>
-</h2>
-<p>Here we link to the five social science lists, which our project is build upon.</p>
-<div class="book-columns flex flex-wrap">
+<p>To find out which concept/content are most definitive for each of the scientific disciplines, we have calculate the <code>term frequency</code> (TF) as well as the <code>term frequency - inverse document frequency</code> (TF-IDF) for each of the 5 fields.</p>
+<p>Furthermore, we have also calculated both TF and TF-IDF for each of the 21 identified network communities, to see if the community partition was meaningsful with regard to the content of the wikipages.</p>
+<p>For a further elaboration on both metrics follow 
+  <a href="https://sodas.ku.dk/people/Jonas_Pedersen__140x174.jpg">this link</a></p>
 
-  <div class="flex-even markdown-inner">
-    <ul>
-<li>
-<p>
-  <a href="https://en.wikipedia.org/wiki/List_of_sociologists">Sociologists</a></p>
-</li>
-<li>
-<p>
-  <a href="https://en.wikipedia.org/wiki/List_of_psychologists">Psychologists</a></p>
-</li>
-<li>
-<p>
-  <a href="https://en.wikipedia.org/wiki/List_of_political_scientists">Political Scientists</a></p>
-</li>
-<li>
-<p>
-  <a href="https://en.wikipedia.org/wiki/List_of_economists">Economists</a></p>
-</li>
-<li>
-<p>
-  <a href="https://en.wikipedia.org/wiki/List_of_anthropologists">Anthropologists</a></p>
-</li>
-</ul>
 
-  </div>
 
-  <div class="flex-even markdown-inner">
-    <left>
-<img src="https://i.giphy.com/media/3oKIPpFhwsMNrRIjN6/giphy.webp" width=400 height=220>
-</left>
 
-  </div>
+<div class="book-tabs"><input type="radio" class="toggle" name="tabs-uniqueid" id="tabs-uniqueid-0" checked="checked" />
+  <label for="tabs-uniqueid-0">TF</label>
+  <div class="book-tabs-content markdown-inner"><h1 id="tf-of-the-scientific-disciplines">
+  TF of the scientific disciplines
+  <a class="anchor" href="#tf-of-the-scientific-disciplines">#</a>
+</h1>
+<table border="0" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Rank of words based on TF →</th>
+      <th>0</th>
+      <th>1</th>
+      <th>2</th>
+      <th>3</th>
+      <th>4</th>
+    </tr>
+    <tr>
+      <th>↓ Scientific Field</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>anth</th>
+      <td>university</td>
+      <td>anthropology</td>
+      <td>american</td>
+      <td>work</td>
+      <td>new</td>
+    </tr>
+    <tr>
+      <th>eco</th>
+      <td>economics</td>
+      <td>economic</td>
+      <td>university</td>
+      <td>theory</td>
+      <td>new</td>
+    </tr>
+    <tr>
+      <th>multiple</th>
+      <td>social</td>
+      <td>work</td>
+      <td>university</td>
+      <td>society</td>
+      <td>theory</td>
+    </tr>
+    <tr>
+      <th>pol</th>
+      <td>university</td>
+      <td>political</td>
+      <td>american</td>
+      <td>international</td>
+      <td>science</td>
+    </tr>
+    <tr>
+      <th>psy</th>
+      <td>psychology</td>
+      <td>university</td>
+      <td>work</td>
+      <td>research</td>
+      <td>theory</td>
+    </tr>
+    <tr>
+      <th>soc</th>
+      <td>university</td>
+      <td>social</td>
+      <td>sociology</td>
+      <td>work</td>
+      <td>new</td>
+    </tr>
+  </tbody>
+</table>
+<p>Here, we writes something clever about the TF-stuff.</div><input type="radio" class="toggle" name="tabs-uniqueid" id="tabs-uniqueid-1"  />
+  <label for="tabs-uniqueid-1">TF-IDF</label>
+  <div class="book-tabs-content markdown-inner"><h1 id="tf-idf-of-the-scientific-disciplines">
+  TF-IDF of the scientific disciplines
+  <a class="anchor" href="#tf-idf-of-the-scientific-disciplines">#</a>
+</h1>
+<table border="0" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Rank of words based on TF-IDF →</th>
+      <th>0</th>
+      <th>1</th>
+      <th>2</th>
+      <th>3</th>
+      <th>4</th>
+    </tr>
+    <tr>
+      <th>↓ Scientific Field</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>anth</th>
+      <td>gorilla</td>
+      <td>apache</td>
+      <td>iroquois</td>
+      <td>zuni</td>
+      <td>olduvai</td>
+    </tr>
+    <tr>
+      <th>eco</th>
+      <td>econometric</td>
+      <td>econometrics</td>
+      <td>macroeconomic</td>
+      <td>keynesian</td>
+      <td>macroeconomics</td>
+    </tr>
+    <tr>
+      <th>multiple</th>
+      <td>khaldūn</td>
+      <td>habitus</td>
+      <td>samoan</td>
+      <td>hardt</td>
+      <td>psychoanalytic</td>
+    </tr>
+    <tr>
+      <th>pol</th>
+      <td>dodgson</td>
+      <td>arend</td>
+      <td>neorealism</td>
+      <td>ndp</td>
+      <td>tatu</td>
+    </tr>
+    <tr>
+      <th>psy</th>
+      <td>apa</td>
+      <td>psychoanalytic</td>
+      <td>psychotherapy</td>
+      <td>jungian</td>
+      <td>therapy</td>
+    </tr>
+    <tr>
+      <th>soc</th>
+      <td>wallpaper</td>
+      <td>sociologie</td>
+      <td>gemeinschaft</td>
+      <td>ortega</td>
+      <td>cyborg</td>
+    </tr>
+  </tbody>
+</table>
+<p>Here, we writes something clever about the TF-IDF-stuff.</div></div>
 
-</div>
-
-<p>Here we have the different datasets which we used for the project. To load the data into python, we suggest you use the following code-snippet:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tpl" data-lang="tpl">import requests
-data = requests.get(dataset_url).json() 
-</code></pre></div><p>Note that all of the datasets are in a json/dictionary format.</p>
-<h2 id="network-data">
-  Network Data
-  <a class="anchor" href="#network-data">#</a>
-</h2>
-<ul>
-<li>
-<p>
-  <a href="https://raw.githubusercontent.com/EsbenBL/social_graph_exam/main/edge_list.json">Edgelist</a></p>
-</li>
-<li>
-<p>
-  <a href="https://raw.githubusercontent.com/EsbenBL/social_graph_exam/main/node_list.json">Nodelist</a></p>
-</li>
-<li>
-<p>
-  <a href="https://raw.githubusercontent.com/EsbenBL/social_graph_exam/main/inv_science_name_dict.json">Dictionary of the scientists and their field</a></p>
-</li>
-<li>
-<p>
-  <a href="https://raw.githubusercontent.com/EsbenBL/social_graph_exam/main/name_field_community.json">Scientists, their field, and network community</a></p>
-</li>
-</ul>
-<h2 id="text-data">
-  Text Data
-  <a class="anchor" href="#text-data">#</a>
-</h2>
-<ul>
-<li>
-  <a href="https://raw.githubusercontent.com/EsbenBL/social_graph_exam/main/wiki_dict_noname.json">Cleaned Wikipedia content</a></li>
-</ul>
-<h2 id="hsbm-data">
-  HSBM Data
-  <a class="anchor" href="#hsbm-data">#</a>
-</h2>
-<p>For a more indepth rundown of the data cleaning process, the code is available in following 
-  <a href="https://github.com/EsbenBL/social_graph_exam/blob/main/Explainer_notebook.ipynb">this link to a ipynb-notebook</a></p>
 </article>
  
       

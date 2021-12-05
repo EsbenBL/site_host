@@ -5,6 +5,8 @@
     <loc>https://esbenbl.github.io/site_host/docs/Analysis/nx_characteristic/basic_stats/basic_stats/</loc>
     <lastmod>2021-12-03T18:34:23+01:00</lastmod>
   </url><url>
+    <loc>https://esbenbl.github.io/site_host/docs/Analysis/text_analysis/tf_idf_field/</loc>
+  </url><url>
     <loc>https://esbenbl.github.io/site_host/docs/the_project/</loc>
     <lastmod>2021-12-04T23:46:04+01:00</lastmod>
   </url><url>
@@ -14,20 +16,13 @@
     <loc>https://esbenbl.github.io/site_host/docs/Analysis/nx_characteristic/</loc>
     <lastmod>2021-12-04T23:46:04+01:00</lastmod>
   </url><url>
-    <loc>https://esbenbl.github.io/site_host/docs/Analysis/hsbm/</loc>
-    <lastmod>2021-12-03T18:34:23+01:00</lastmod>
+    <loc>https://esbenbl.github.io/site_host/docs/Analysis/text_analysis/</loc>
   </url><url>
     <loc>https://esbenbl.github.io/site_host/posts/creating-a-new-theme/</loc>
     <lastmod>2021-12-03T13:18:35+01:00</lastmod>
   </url><url>
-    <loc>https://esbenbl.github.io/site_host/docs/Analysis/hsbm/drop_down/drop_down/</loc>
-    <lastmod>2021-12-03T18:34:23+01:00</lastmod>
-  </url><url>
     <loc>https://esbenbl.github.io/site_host/posts/</loc>
     <lastmod>2021-12-03T13:18:35+01:00</lastmod>
-  </url><url>
-    <loc>https://esbenbl.github.io/site_host/docs/Analysis/nx_characteristic/community/community/</loc>
-    <lastmod>2021-12-03T17:44:13+01:00</lastmod>
   </url><url>
     <loc>https://esbenbl.github.io/site_host/docs/shortcodes/</loc>
     <lastmod>2021-12-03T13:18:35+01:00</lastmod>
@@ -67,6 +62,8 @@
   </url><url>
     <loc>https://esbenbl.github.io/site_host/categories/</loc>
   </url><url>
+    <loc>https://esbenbl.github.io/site_host/docs/Analysis/nx_characteristic/community/</loc>
+  </url><url>
     <loc>https://esbenbl.github.io/site_host/docs/the_project/Dataset/Datasets/</loc>
     <lastmod>2021-12-04T23:46:04+01:00</lastmod>
   </url><url>
@@ -76,9 +73,10 @@
     <loc>https://esbenbl.github.io/site_host/</loc>
     <lastmod>2021-12-04T14:03:49+01:00</lastmod>
   </url><url>
-    <loc>https://esbenbl.github.io/site_host/docs/the_project/Modularity/modularity/</loc>
-    <lastmod>2021-12-03T18:40:23+01:00</lastmod>
+    <loc>https://esbenbl.github.io/site_host/docs/Analysis/nx_characteristic/community/Modularity/modularity/</loc>
   </url><url>
     <loc>https://esbenbl.github.io/site_host/tags/</loc>
+  </url><url>
+    <loc>https://esbenbl.github.io/site_host/docs/Analysis/text_analysis/tf_idf_com/</loc>
   </url>
 </urlset>

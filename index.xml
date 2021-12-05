@@ -12,11 +12,11 @@
       
       <guid>https://esbenbl.github.io/site_host/docs/Analysis/nx_characteristic/basic_stats/basic_stats/</guid>
       <description>Basic Statistics#Below, we plot the network, excluding singleton nodes:
-The plot is indeed interesting.
+The plot is indeed interesting.
 Further, we present the degree distribution of the network.
 Here is the in-degree distribution:
-And here is the out-degree distribution:
-How about that, Ganon?</description>
+And here is the out-degree distribution:
+How about that, Ganon?</description>
     </item>
     
     <item>
@@ -27,27 +27,6 @@ Here is the in-degree distribution:
       <guid>https://esbenbl.github.io/site_host/posts/creating-a-new-theme/</guid>
       <description>Introduction#This tutorial will show you how to create a simple theme in Hugo. I assume that you are familiar with HTML, the bash command line, and that you are comfortable using Markdown to format content. I&amp;rsquo;ll explain how Hugo uses templates and how you can organize your templates to create a theme. I won&amp;rsquo;t cover using CSS to style your theme.
 We&amp;rsquo;ll start with creating a new site with a very basic template.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://esbenbl.github.io/site_host/docs/Analysis/hsbm/drop_down/drop_down/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://esbenbl.github.io/site_host/docs/Analysis/hsbm/drop_down/drop_down/</guid>
-      <description>Drop-Down Ganon#Det virker med drop down
-</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://esbenbl.github.io/site_host/docs/Analysis/nx_characteristic/community/community/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://esbenbl.github.io/site_host/docs/Analysis/nx_characteristic/community/community/</guid>
-      <description>Community Detection#We have used Louvain Partition to make communities.
-Compare this to the partition based on field
-Note that this is based on the GCC.</description>
     </item>
     
     <item>
@@ -173,12 +152,13 @@ The Wikipedia Lists#Here we link to the five social science lists, which our 
     
     <item>
       <title>Louvain Modularity</title>
-      <link>https://esbenbl.github.io/site_host/docs/the_project/Modularity/modularity/</link>
+      <link>https://esbenbl.github.io/site_host/docs/Analysis/nx_characteristic/community/Modularity/modularity/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://esbenbl.github.io/site_host/docs/the_project/Modularity/modularity/</guid>
+      <guid>https://esbenbl.github.io/site_host/docs/Analysis/nx_characteristic/community/Modularity/modularity/</guid>
       <description>Louvain Modularity#We optimize modularity based on the Louvian Partition Algorithm, which is:
-\[\Delta M=\left[\frac{\sum_{in}&amp;#43;2k_{i,in}}{2W} - \left(\frac{\sum_{tot}&amp;#43;k_{i}}{2W}\right)^2 \right] - \left[\frac{\sum_{in}}{2W} - \left(\frac{\sum_{tot}}{2W}\right)^2 - \left(\frac{k_{i}}{2W}\right)^2 \right]\]Is used to make these networks</description>
+\[\Delta M=\left[\frac{\sum_{in}&amp;#43;2k_{i,in}}{2W} - \left(\frac{\sum_{tot}&amp;#43;k_{i}}{2W}\right)^2 \right] - \left[\frac{\sum_{in}}{2W} - \left(\frac{\sum_{tot}}{2W}\right)^2 - \left(\frac{k_{i}}{2W}\right)^2 \right]\]Is used to make these networks
+Rank of words based on TF →01234↓ Community0theorygameuniversitynewsocial1universityanthropologyamericannewstudy2psychologyuniversityworkchildnew3socialuniversitysociologyamericanwork4universitypoliticalamericannewscience5economiceconomicsuniversitytheorynew6universityeconomicseconomicresearchamerican7universityworksocialnewpolitical8universityeconomicresearchtradeinternational9womannewresearchzealandeconomics10universitygendersocietysylvialondon11universityreligiousreligionsociologymovement12–universityoxforddelhinew13universityeconomicsinternationaleconomictrade14politicalelectionbritishuniversity’15dereligionparisetle16universityinternationalpoliticalstateamerican17universityorganizationmanagementresearchsocial18raphilippineactcoauthorpresident19derundfrankfurtgermandie20germanhitlergermanywargovernment21gendersexualchildsexidentity </description>
     </item>
     
   </channel>
