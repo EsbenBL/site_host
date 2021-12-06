@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="TF and TF-IDF#">
+<meta name="description" content="TF and TF-IDF#According to Wiki, there is a variaty of ways to calculate TF-IDF. We calculate TF-IDF in what appears to be the most conventional way, where the raw count, \( f_{t,d}\), of term \(t\)in document \( d\)is standardized/adjusted by the document length, \( \sum_{t&#39;\in{d}}f_{t&#39;,d}\), e.i. adjusted by the raw count of all the terms, \( t&#39;\), in \(d\).">
 <meta name="theme-color" content="#FFFFFF">
 <meta name="color-scheme" content="light dark"><meta property="og:title" content="TF and TF-IDF" />
-<meta property="og:description" content="TF and TF-IDF#" />
+<meta property="og:description" content="TF and TF-IDF#According to Wiki, there is a variaty of ways to calculate TF-IDF. We calculate TF-IDF in what appears to be the most conventional way, where the raw count, \( f_{t,d}\), of term \(t\)in document \( d\)is standardized/adjusted by the document length, \( \sum_{t&#39;\in{d}}f_{t&#39;,d}\), e.i. adjusted by the raw count of all the terms, \( t&#39;\), in \(d\)." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://esbenbl.github.io/site_host/docs/methodology/tf_idf_method/tf_idf/" /><meta property="article:section" content="docs" />
 
@@ -538,6 +538,77 @@ https://github.com/alex-shpak/hugo-book
   TF and TF-IDF
   <a class="anchor" href="#tf-and-tf-idf">#</a>
 </h1>
+<p>According to 
+  <a href="https://en.wikipedia.org/wiki/Tf%E2%80%93idf">Wiki</a>, there is a variaty of ways to calculate TF-IDF. We calculate TF-IDF in what appears to be the most conventional way, where the raw count, 
+<link rel="stylesheet" href="https://esbenbl.github.io/site_host/katex/katex.min.css" />
+<script defer src="https://esbenbl.github.io/site_host/katex/katex.min.js"></script>
+<script defer src="https://esbenbl.github.io/site_host/katex/auto-render.min.js" onload="renderMathInElement(document.body);"></script><span>
+  \( f_{t,d}\)
+</span>
+ , of term <span>
+  \(t\)
+</span>
+ in document <span>
+  \( d\)
+</span>
+  is standardized/adjusted by the document length, <span>
+  \( \sum_{t&#39;\in{d}}f_{t&#39;,d}\)
+</span>
+ , e.i. adjusted by the raw count of all the terms, <span>
+  \( t&#39;\)
+</span>
+ , in <span>
+  \(d\)
+</span>
+ . Thus, <span>
+  \(TF(t,d)\)
+</span>
+  becomes the share of words in <span>
+  \(d\)
+</span>
+ that is <span>
+  \(t\)
+</span>
+. The equation for the standardized raw count (term frequency) is:
+<span>
+  \[  
+TF_{t,d}=\frac{f_{t,d}}{\sum_{t&#39;\in{d}} f_{t&#39;,d}}\]
+</span>
+</p>
+<p>Further, we use the inverse document frequency, IDF, to diminish the weight of terms that occur frequently across all documents and increase the weight of terms that are unique to a few documents. IDF is calculated as: 
+<span>
+  \[  
+idf(t,D)=log\left(\frac{N}{\{d\in{D}:t\in{d}\}|}\right)\]
+</span>
+</p>
+<p>where <span>
+  \(N\)
+</span>
+ is the number of documents, and <span>
+  \({\{d\in{D}:t\in{d}\}|}\)
+</span>
+ is the number of documents the term <span>
+  \(t\)
+</span>
+ appears in (As our vocabulary is based on the words of the documents, we do not need to worry about a scenario where a term doesn&rsquo;t appear in any of the documents, which would otherwise  result in a division by 0).</p>
+<p>TF-IDF is simply the product of TF and IDF:
+<span>
+  \[ 
+TFIDF(t,d,D) = TF\bullet idf\]
+</span>
+</p>
+<p>Thus, if a term appears in all the documents, its weight in all the documents will be reduced to 0, as:<br>
+<span>
+  \[
+\frac{N}{|\{d\in{D}:t\in{d}\}|} = 1 \rightarrow IDF=log(1)=0\]
+</span>
+</p>
+<p>Further, if a term does not appear in a document, its weight in that document will also be reduced to 0, as <span>
+  \(f_{t,d}=0\)
+</span>
+. On the other hand, a high weight in TF–IDF is reached by a high term frequency (in the given document) and a low document frequency of the term in the whole collection of documents.</p>
+<p>
+  <a href="https://esbenbl.github.io/site_host/docs/Analysis/text_analysis/tf_idf_field/">Back to the TF-IDFs</a></p>
 </article>
  
       

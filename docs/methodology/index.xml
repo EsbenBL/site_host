@@ -20,7 +20,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://esbenbl.github.io/site_host/docs/methodology/tf_idf_method/tf_idf/</guid>
-      <description>TF and TF-IDF#</description>
+      <description>TF and TF-IDF#According to Wiki, there is a variaty of ways to calculate TF-IDF. We calculate TF-IDF in what appears to be the most conventional way, where the raw count, \( f_{t,d}\), of term \(t\)in document \( d\)is standardized/adjusted by the document length, \( \sum_{t&amp;#39;\in{d}}f_{t&amp;#39;,d}\), e.i. adjusted by the raw count of all the terms, \( t&amp;#39;\), in \(d\).</description>
     </item>
     
   </channel>
