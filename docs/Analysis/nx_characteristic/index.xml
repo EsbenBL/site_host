@@ -11,10 +11,8 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://esbenbl.github.io/site_host/docs/Analysis/nx_characteristic/community/community/</guid>
-      <description>Community Detection#We have used Louvain Partition to make communities. In the plot below, we have plotted the community size for each of the 22 detected communities;
-The following network shows how the communities are distributed and clustered in the network;
-Compare this to the partition based on field;
-Note that this is based on the GCC.</description>
+      <description>Community Detection#We have used Louvain Partition to make communities. In the plot below, we have plotted the community size for each of the 22 detected communities. Note that this is based on the GCC;
+Community Size#As expected from the initial examination of the plotted network, most of the nodes are partitioned onto 5-8 very large communities, followed by a series of remarkably smaller communities. The plot below shows the distribution of community size, where each community is named after the 3 most connected nodes in the given community.</description>
     </item>
     
   </channel>

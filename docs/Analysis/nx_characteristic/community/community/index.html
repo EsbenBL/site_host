@@ -3,16 +3,12 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Community Detection#We have used Louvain Partition to make communities. In the plot below, we have plotted the community size for each of the 22 detected communities;
-The following network shows how the communities are distributed and clustered in the network;
-Compare this to the partition based on field;
-Note that this is based on the GCC.">
+<meta name="description" content="Community Detection#We have used Louvain Partition to make communities. In the plot below, we have plotted the community size for each of the 22 detected communities. Note that this is based on the GCC;
+Community Size#As expected from the initial examination of the plotted network, most of the nodes are partitioned onto 5-8 very large communities, followed by a series of remarkably smaller communities. The plot below shows the distribution of community size, where each community is named after the 3 most connected nodes in the given community.">
 <meta name="theme-color" content="#FFFFFF">
 <meta name="color-scheme" content="light dark"><meta property="og:title" content="Communities" />
-<meta property="og:description" content="Community Detection#We have used Louvain Partition to make communities. In the plot below, we have plotted the community size for each of the 22 detected communities;
-The following network shows how the communities are distributed and clustered in the network;
-Compare this to the partition based on field;
-Note that this is based on the GCC." />
+<meta property="og:description" content="Community Detection#We have used Louvain Partition to make communities. In the plot below, we have plotted the community size for each of the 22 detected communities. Note that this is based on the GCC;
+Community Size#As expected from the initial examination of the plotted network, most of the nodes are partitioned onto 5-8 very large communities, followed by a series of remarkably smaller communities. The plot below shows the distribution of community size, where each community is named after the 3 most connected nodes in the given community." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://esbenbl.github.io/site_host/docs/Analysis/nx_characteristic/community/community/" /><meta property="article:section" content="docs" />
 
@@ -545,13 +541,26 @@ https://github.com/alex-shpak/hugo-book
   <a class="anchor" href="#community-detection">#</a>
 </h1>
 <p>We have used 
-  <a href="https://esbenbl.github.io/site_host/docs/methodology/Modularity/modularity/">Louvain Partition</a> to make communities. In the plot below, we have plotted the community size for each of the 22 detected communities;</p>
-<img src="https://esbenbl.github.io/site_host/community_size.png" alt="Community Network" style="width:800px;"/>
+  <a href="https://esbenbl.github.io/site_host/docs/methodology/Modularity/modularity/">Louvain Partition</a> to make communities. In the plot below, we have plotted the community size for each of the 22 detected communities. Note that this is based on the GCC;</p>
+<h2 id="community-size">
+  Community Size
+  <a class="anchor" href="#community-size">#</a>
+</h2>
+<p>As expected from the initial examination of the plotted network, most of the nodes are partitioned onto 5-8 very large communities, followed by a series of remarkably smaller communities.
+The plot below shows the distribution of community size, where each community is named after the 3 most connected nodes in the given community.
+<img src="https://esbenbl.github.io/site_host/community_size.png" alt="Community Network" style="width:800px;"/></p>
+<h2 id="community-network">
+  Community Network
+  <a class="anchor" href="#community-network">#</a>
+</h2>
 <p>The following network shows how the communities are distributed and clustered in the network;</p>
 <img src="https://esbenbl.github.io/site_host/community_network.png" alt="Community Network" style="width:800px;"/>
-<p>Compare this to the partition based on field;</p>
+<h2 id="discipline-network">
+  Discipline Network
+  <a class="anchor" href="#discipline-network">#</a>
+</h2>
+<p>We can compare the network partition from the Louvain algorithm to the partition based on the conventional 5 social science disciplines;</p>
 <img src="https://esbenbl.github.io/site_host/gcc_network.png" alt="Field Network" style="width:800px;"/>
-<p>Note that this is based on the GCC.</p>
 </article>
  
       
