@@ -6,20 +6,6 @@
     <description>Recent content in Introduction on Network Communities of the Social Sciences</description>
     <generator>Hugo -- gohugo.io</generator><atom:link href="https://esbenbl.github.io/site_host/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Basic Statistics</title>
-      <link>https://esbenbl.github.io/site_host/docs/Analysis/nx_characteristic/basic_stats/basic_stats/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://esbenbl.github.io/site_host/docs/Analysis/nx_characteristic/basic_stats/basic_stats/</guid>
-      <description>Basic Statistics#Below, we plot the network, excluding singleton nodes:
-The plot is indeed interesting.
-Further, we present the degree distribution of the network.
-Here is the in-degree distribution:
-And here is the out-degree distribution:
-How about that, Ganon?</description>
-    </item>
-    
-    <item>
       <title>Creating a New Theme</title>
       <link>https://esbenbl.github.io/site_host/posts/creating-a-new-theme/</link>
       <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
@@ -151,12 +137,36 @@ The Wikipedia Lists#Here we link to the five social science lists, which our 
     </item>
     
     <item>
+      <title>Degree Distribution</title>
+      <link>https://esbenbl.github.io/site_host/docs/Analysis/nx_characteristic/basic_stats/deg_dist/deg_dist/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://esbenbl.github.io/site_host/docs/Analysis/nx_characteristic/basic_stats/deg_dist/deg_dist/</guid>
+      <description>Degree Distribution#We present the degree distribution of the network.
+Here is the in-degree distribution:
+And here is the out-degree distribution:
+How about that, Ganon?</description>
+    </item>
+    
+    <item>
       <title>Louvain Modularity</title>
       <link>https://esbenbl.github.io/site_host/docs/Analysis/nx_characteristic/community/Modularity/modularity/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://esbenbl.github.io/site_host/docs/Analysis/nx_characteristic/community/Modularity/modularity/</guid>
       <description>Louvain Modularity#The Louvain algorithm partitions the network by finding the partition that optimizes modularity, defined as (Barabási eq. 9.12): \(M = \sum_{c=1}^{n_c}\left[\frac{L_c}{L}-\left(\frac{k_c}{2L}\right)^2\right]\), where \(n_c\)is the number of communities/partitions, \(L\)is the total number of links in the network, \(L_c\)is the total number of links within community \(C_c\), and \(k_c\)is the total degree of the nodes in this community (including links to nodes outside community \(C_c\)).</description>
+    </item>
+    
+    <item>
+      <title>Most Connected Nodes</title>
+      <link>https://esbenbl.github.io/site_host/docs/Analysis/nx_characteristic/basic_stats/top_connected/most_connected/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://esbenbl.github.io/site_host/docs/Analysis/nx_characteristic/basic_stats/top_connected/most_connected/</guid>
+      <description>Most Connected Nodes#Below we plot the most connected nodes, both with regard to in- and out-degree:
+Here is the 50 highest in-degree nodes:
+And here is the 50 highest out-degree nodes:
+How about that, Ganon?</description>
     </item>
     
     <item>

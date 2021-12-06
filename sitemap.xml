@@ -2,9 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://esbenbl.github.io/site_host/docs/Analysis/nx_characteristic/basic_stats/basic_stats/</loc>
-    <lastmod>2021-12-05T17:45:20+01:00</lastmod>
-  </url><url>
     <loc>https://esbenbl.github.io/site_host/docs/Analysis/text_analysis/tf_idf_field/</loc>
     <lastmod>2021-12-05T17:45:20+01:00</lastmod>
   </url><url>
@@ -62,6 +59,8 @@
     <loc>https://esbenbl.github.io/site_host/docs/shortcodes/tabs/</loc>
     <lastmod>2021-12-03T13:18:35+01:00</lastmod>
   </url><url>
+    <loc>https://esbenbl.github.io/site_host/docs/Analysis/nx_characteristic/basic_stats/</loc>
+  </url><url>
     <loc>https://esbenbl.github.io/site_host/categories/</loc>
   </url><url>
     <loc>https://esbenbl.github.io/site_host/docs/Analysis/nx_characteristic/community/</loc>
@@ -70,8 +69,10 @@
     <loc>https://esbenbl.github.io/site_host/docs/the_project/Dataset/Datasets/</loc>
     <lastmod>2021-12-05T17:45:20+01:00</lastmod>
   </url><url>
+    <loc>https://esbenbl.github.io/site_host/docs/Analysis/nx_characteristic/basic_stats/deg_dist/deg_dist/</loc>
+  </url><url>
     <loc>https://esbenbl.github.io/site_host/docs/</loc>
-    <lastmod>2021-12-06T12:17:42+01:00</lastmod>
+    <lastmod>2021-12-06T13:02:44+01:00</lastmod>
   </url><url>
     <loc>https://esbenbl.github.io/site_host/</loc>
     <lastmod>2021-12-06T12:17:42+01:00</lastmod>
@@ -79,8 +80,10 @@
     <loc>https://esbenbl.github.io/site_host/docs/Analysis/nx_characteristic/community/Modularity/modularity/</loc>
     <lastmod>2021-12-06T11:48:47+01:00</lastmod>
   </url><url>
+    <loc>https://esbenbl.github.io/site_host/docs/Analysis/nx_characteristic/basic_stats/top_connected/most_connected/</loc>
+  </url><url>
     <loc>https://esbenbl.github.io/site_host/docs/the_project/Preprocess/Preproces/</loc>
-    <lastmod>2021-12-06T12:17:42+01:00</lastmod>
+    <lastmod>2021-12-06T13:02:44+01:00</lastmod>
   </url><url>
     <loc>https://esbenbl.github.io/site_host/tags/</loc>
   </url><url>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Basic Statistics on Network Communities of the Social Sciences</title>
+    <link>https://esbenbl.github.io/site_host/docs/Analysis/nx_characteristic/basic_stats/</link>
+    <description>Recent content in Basic Statistics on Network Communities of the Social Sciences</description>
+    <generator>Hugo -- gohugo.io</generator><atom:link href="https://esbenbl.github.io/site_host/docs/Analysis/nx_characteristic/basic_stats/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Degree Distribution</title>
+      <link>https://esbenbl.github.io/site_host/docs/Analysis/nx_characteristic/basic_stats/deg_dist/deg_dist/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://esbenbl.github.io/site_host/docs/Analysis/nx_characteristic/basic_stats/deg_dist/deg_dist/</guid>
+      <description>Degree Distribution#We present the degree distribution of the network.
+Here is the in-degree distribution:
+And here is the out-degree distribution:
+How about that, Ganon?</description>
+    </item>
+    
+    <item>
+      <title>Most Connected Nodes</title>
+      <link>https://esbenbl.github.io/site_host/docs/Analysis/nx_characteristic/basic_stats/top_connected/most_connected/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://esbenbl.github.io/site_host/docs/Analysis/nx_characteristic/basic_stats/top_connected/most_connected/</guid>
+      <description>Most Connected Nodes#Below we plot the most connected nodes, both with regard to in- and out-degree:
+Here is the 50 highest in-degree nodes:
+And here is the 50 highest out-degree nodes:
+How about that, Ganon?</description>
+    </item>
+    
+  </channel>
+</rss>
