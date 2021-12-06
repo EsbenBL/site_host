@@ -121,6 +121,18 @@ Lorem markdownum insigne. Olympo signis Delphis!</description>
     </item>
     
     <item>
+      <title>Communities</title>
+      <link>https://esbenbl.github.io/site_host/docs/Analysis/nx_characteristic/community/community/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://esbenbl.github.io/site_host/docs/Analysis/nx_characteristic/community/community/</guid>
+      <description>Community Detection#We have used Louvain Partition to make communities. In the plot below, we have plotted the community size for each of the 22 detected communities;
+The following network shows how the communities are distributed and clustered in the network;
+Compare this to the partition based on field;
+Note that this is based on the GCC.</description>
+    </item>
+    
+    <item>
       <title>Datasets</title>
       <link>https://esbenbl.github.io/site_host/docs/the_project/Dataset/Datasets/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -150,10 +162,10 @@ How about that, Ganon?</description>
     
     <item>
       <title>Louvain Modularity</title>
-      <link>https://esbenbl.github.io/site_host/docs/Analysis/nx_characteristic/community/Modularity/modularity/</link>
+      <link>https://esbenbl.github.io/site_host/docs/methodology/Modularity/modularity/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://esbenbl.github.io/site_host/docs/Analysis/nx_characteristic/community/Modularity/modularity/</guid>
+      <guid>https://esbenbl.github.io/site_host/docs/methodology/Modularity/modularity/</guid>
       <description>Louvain Modularity#The Louvain algorithm partitions the network by finding the partition that optimizes modularity, defined as (Barabási eq. 9.12): \(M = \sum_{c=1}^{n_c}\left[\frac{L_c}{L}-\left(\frac{k_c}{2L}\right)^2\right]\), where \(n_c\)is the number of communities/partitions, \(L\)is the total number of links in the network, \(L_c\)is the total number of links within community \(C_c\), and \(k_c\)is the total degree of the nodes in this community (including links to nodes outside community \(C_c\)).</description>
     </item>
     
@@ -176,6 +188,15 @@ How about that, Ganon?</description>
       
       <guid>https://esbenbl.github.io/site_host/docs/the_project/Preprocess/Preproces/</guid>
       <description>Proprocessing the data#To construct this &amp;ldquo;community&amp;rdquo; of social scientists, we found inspiration by examining the Faculty of Social Science at Copenhagen University. The Social Science faculty have five overall departments: Sociology, Psychology, Economy, Anthropology, and Political Science. For each of these five categories we have a list of scientists on wikipedia. We used these five lists of scientists to find and all the scientists in our final dataset.</description>
+    </item>
+    
+    <item>
+      <title>TF and TF-IDF</title>
+      <link>https://esbenbl.github.io/site_host/docs/methodology/tf_idf_method/_tf_idf/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://esbenbl.github.io/site_host/docs/methodology/tf_idf_method/_tf_idf/</guid>
+      <description>TF and TF-IDF#According to Wiki, there is a variaty of ways to calculate TF-IDF. We calculate TF-IDF in what appears to be the most conventional way, where the raw count, $f_{t,d}$, of term $t$ in document $d$ is standardized/adjusted by the document length, $\sum_{t&#39;\in{d}}f_{t&#39;,d}$, e.i. adjusted by the raw count of all the terms, $t&#39;$, in $d$. Thus, $TF(t,d)$ becomes the share of words in $d$ that is $t$.</description>
     </item>
     
   </channel>

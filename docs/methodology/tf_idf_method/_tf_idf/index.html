@@ -3,19 +3,19 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="TF-IDF within the Disciplines#To find out which concept/content are most definitive for each of the scientific disciplines, we have calculate the term frequency (TF) as well as the term frequency - inverse document frequency (TF-IDF) for each of the 5 fields.
-Furthermore, we have also calculated both TF and TF-IDF for each of the 21 identified network communities, to see if the community partition was meaningsful with regard to the content of the wikipages.">
+<meta name="description" content="TF and TF-IDF#According to Wiki, there is a variaty of ways to calculate TF-IDF. We calculate TF-IDF in what appears to be the most conventional way, where the raw count, $f_{t,d}$, of term $t$ in document $d$ is standardized/adjusted by the document length, $\sum_{t&#39;\in{d}}f_{t&#39;,d}$, e.i. adjusted by the raw count of all the terms, $t&#39;$, in $d$. Thus, $TF(t,d)$ becomes the share of words in $d$ that is $t$.">
 <meta name="theme-color" content="#FFFFFF">
-<meta name="color-scheme" content="light dark"><meta property="og:title" content="TF-IDF within the Disciplines" />
-<meta property="og:description" content="" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://esbenbl.github.io/site_host/docs/Analysis/text_analysis/tf_idf_field/" />
+<meta name="color-scheme" content="light dark"><meta property="og:title" content="TF and TF-IDF" />
+<meta property="og:description" content="TF and TF-IDF#According to Wiki, there is a variaty of ways to calculate TF-IDF. We calculate TF-IDF in what appears to be the most conventional way, where the raw count, $f_{t,d}$, of term $t$ in document $d$ is standardized/adjusted by the document length, $\sum_{t&#39;\in{d}}f_{t&#39;,d}$, e.i. adjusted by the raw count of all the terms, $t&#39;$, in $d$. Thus, $TF(t,d)$ becomes the share of words in $d$ that is $t$." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://esbenbl.github.io/site_host/docs/methodology/tf_idf_method/_tf_idf/" /><meta property="article:section" content="docs" />
 
-<title>TF-IDF within the Disciplines | Network Communities of the Social Sciences</title>
+
+
+<title>TF and TF-IDF | Network Communities of the Social Sciences</title>
 <link rel="manifest" href="https://esbenbl.github.io/site_host/manifest.json">
 <link rel="icon" href="https://esbenbl.github.io/site_host/favicon.png" type="image/x-icon">
-<link rel="stylesheet" href="https://esbenbl.github.io/site_host/book.min.95d69eb6bad8b9707ff2b5d8d9e31ce70a1b84f2ed7ffaf665ffcf00aa7993bd.css" integrity="sha256-ldaetrrYuXB/8rXY2eMc5wobhPLtf/r2Zf/PAKp5k70=" crossorigin="anonymous"><link rel="alternate" type="application/rss+xml" href="https://esbenbl.github.io/site_host/docs/Analysis/text_analysis/tf_idf_field/index.xml" title="Network Communities of the Social Sciences" />
-<!--
+<link rel="stylesheet" href="https://esbenbl.github.io/site_host/book.min.95d69eb6bad8b9707ff2b5d8d9e31ce70a1b84f2ed7ffaf665ffcf00aa7993bd.css" integrity="sha256-ldaetrrYuXB/8rXY2eMc5wobhPLtf/r2Zf/PAKp5k70=" crossorigin="anonymous"><!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
 -->
@@ -198,7 +198,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <input type="checkbox" id="section-775c8f3a0ae7cadabf98eb94d5f359b9" class="toggle" checked />
+    <input type="checkbox" id="section-775c8f3a0ae7cadabf98eb94d5f359b9" class="toggle"  />
     <label for="section-775c8f3a0ae7cadabf98eb94d5f359b9" class="flex justify-between">
       <a href="https://esbenbl.github.io/site_host/docs/Analysis/text_analysis/" class="">Text Analysis</a>
     </label>
@@ -214,7 +214,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="https://esbenbl.github.io/site_host/docs/Analysis/text_analysis/tf_idf_field/" class=" active">TF-IDF within the Disciplines</a>
+    <a href="https://esbenbl.github.io/site_host/docs/Analysis/text_analysis/tf_idf_field/" class="">TF-IDF within the Disciplines</a>
   
 
           
@@ -286,7 +286,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="https://esbenbl.github.io/site_host/docs/methodology/tf_idf_method/_tf_idf/" class="">TF and TF-IDF</a>
+    <a href="https://esbenbl.github.io/site_host/docs/methodology/tf_idf_method/_tf_idf/" class=" active">TF and TF-IDF</a>
   
 
         </li>
@@ -520,7 +520,7 @@ https://github.com/alex-shpak/hugo-book
     <img src="https://esbenbl.github.io/site_host/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <strong>TF-IDF within the Disciplines</strong>
+  <strong>TF and TF-IDF</strong>
 
   <label for="toc-control">
     
@@ -534,172 +534,19 @@ https://github.com/alex-shpak/hugo-book
 
       
       
-  <article class="markdown"><h1 id="tf-idf-within-the-disciplines">
-  TF-IDF within the Disciplines
-  <a class="anchor" href="#tf-idf-within-the-disciplines">#</a>
+  <article class="markdown"><h1 id="tf-and-tf-idf">
+  TF and TF-IDF
+  <a class="anchor" href="#tf-and-tf-idf">#</a>
 </h1>
-<p>To find out which concept/content are most definitive for each of the scientific disciplines, we have calculate the <code>term frequency</code> (TF) as well as the <code>term frequency - inverse document frequency</code> (TF-IDF) for each of the 5 fields.</p>
-<p>Furthermore, we have also calculated both TF and TF-IDF for each of the 21 identified network communities, to see if the community partition was meaningsful with regard to the content of the wikipages.</p>
-<p>For a further elaboration on both metrics follow 
-  <a href="https://sodas.ku.dk/people/Jonas_Pedersen__140x174.jpg">this link</a></p>
-
-
-
-
-<div class="book-tabs"><input type="radio" class="toggle" name="tabs-uniqueid" id="tabs-uniqueid-0" checked="checked" />
-  <label for="tabs-uniqueid-0">TF</label>
-  <div class="book-tabs-content markdown-inner"><h1 id="tf-of-the-scientific-disciplines">
-  TF of the scientific disciplines
-  <a class="anchor" href="#tf-of-the-scientific-disciplines">#</a>
-</h1>
-<table border="0" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th>Rank of word based on TF →</th>
-      <th>1</th>
-      <th>2</th>
-      <th>3</th>
-      <th>4</th>
-      <th>5</th>
-    </tr>
-    <tr>
-      <th>↓ Scientific Field</th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>Anthropologist</th>
-      <td>university</td>
-      <td>anthropology</td>
-      <td>american</td>
-      <td>work</td>
-      <td>new</td>
-    </tr>
-    <tr>
-      <th>Economist</th>
-      <td>economics</td>
-      <td>economic</td>
-      <td>university</td>
-      <td>theory</td>
-      <td>new</td>
-    </tr>
-    <tr>
-      <th>Multiple</th>
-      <td>social</td>
-      <td>work</td>
-      <td>university</td>
-      <td>society</td>
-      <td>theory</td>
-    </tr>
-    <tr>
-      <th>Political Scientist</th>
-      <td>university</td>
-      <td>political</td>
-      <td>american</td>
-      <td>international</td>
-      <td>science</td>
-    </tr>
-    <tr>
-      <th>Psychologist</th>
-      <td>psychology</td>
-      <td>university</td>
-      <td>work</td>
-      <td>research</td>
-      <td>theory</td>
-    </tr>
-    <tr>
-      <th>Sociologist</th>
-      <td>university</td>
-      <td>social</td>
-      <td>sociology</td>
-      <td>work</td>
-      <td>new</td>
-    </tr>
-  </tbody>
-</table>
-<p>Here, we writes something clever about the TF-stuff.</div><input type="radio" class="toggle" name="tabs-uniqueid" id="tabs-uniqueid-1"  />
-  <label for="tabs-uniqueid-1">TF-IDF</label>
-  <div class="book-tabs-content markdown-inner"><h1 id="tf-idf-of-the-scientific-disciplines">
-  TF-IDF of the scientific disciplines
-  <a class="anchor" href="#tf-idf-of-the-scientific-disciplines">#</a>
-</h1>
-<table border="0" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th>Rank of word based on TF-IDF →</th>
-      <th>1</th>
-      <th>2</th>
-      <th>3</th>
-      <th>4</th>
-      <th>5</th>
-    </tr>
-    <tr>
-      <th>↓ Scientific Field</th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>Anthropologist</th>
-      <td>gorilla</td>
-      <td>apache</td>
-      <td>zuni</td>
-      <td>iroquois</td>
-      <td>olduvai</td>
-    </tr>
-    <tr>
-      <th>Economist</th>
-      <td>econometric</td>
-      <td>econometrics</td>
-      <td>macroeconomic</td>
-      <td>keynesian</td>
-      <td>macroeconomics</td>
-    </tr>
-    <tr>
-      <th>Multiple</th>
-      <td>khaldūn</td>
-      <td>habitus</td>
-      <td>samoan</td>
-      <td>hardt</td>
-      <td>psychoanalytic</td>
-    </tr>
-    <tr>
-      <th>Political Scientist</th>
-      <td>dodgson</td>
-      <td>arend</td>
-      <td>neorealism</td>
-      <td>ndp</td>
-      <td>nsc</td>
-    </tr>
-    <tr>
-      <th>Psychologist</th>
-      <td>apa</td>
-      <td>psychoanalytic</td>
-      <td>psychotherapy</td>
-      <td>jungian</td>
-      <td>therapy</td>
-    </tr>
-    <tr>
-      <th>Sociologist</th>
-      <td>wallpaper</td>
-      <td>sociologie</td>
-      <td>gemeinschaft</td>
-      <td>ortega</td>
-      <td>cyborg</td>
-    </tr>
-  </tbody>
-</table>
-<p>Here, we writes something clever about the TF-IDF-stuff.</div></div>
-
+<p>According to 
+  <a href="https://en.wikipedia.org/wiki/Tf%E2%80%93idf">Wiki</a>, there is a variaty of ways to calculate TF-IDF. We calculate TF-IDF in what appears to be the most conventional way, where the raw count, $f_{t,d}$, of term $t$ in document $d$ is standardized/adjusted by the document length, $\sum_{t'\in{d}}f_{t',d}$, e.i. adjusted by the raw count of all the terms, $t'$, in $d$. Thus, $TF(t,d)$ becomes the share of words in $d$ that is $t$. The equation for the standardized raw count (term frequency) is:
+$$TF_{t,d}=\frac{f_{t,d}}{\sum_{t'\in{d}} f_{t',d}}$$</p>
+<p>Further, we use the inverse document frequency, IDF, to diminish the weight of terms that occur frequently across all documents and increase the weight of terms that are unique to a few documents. IDF is calculated as: 
+$$idf(t,D)=log\left(\frac{N}{{d\in{D}:t\in{d}}|}\right)$$</p>
+<p>where $N$ is the number of documents, and ${{d\in{D}:t\in{d}}|}$ is the number of documents the term $t$ appears in (As our vocabulary is based on the words of the documents, we do not need to worry about a scenario where a term doesn&rsquo;t appear in any of the documents, which would otherwise  result in a division by 0).</p>
+<p>TF-IDF is simply the product of TF and IDF:
+$$TFIDF(t,d,D) = TF\bullet idf$$</p>
+<p>Thus, if a term appears in all the documents, its weight in all the documents will be reduced to 0, as:  $\frac{N}{{d\in{D}:t\in{d}}|} = 1 \rightarrow IDF=log(1)=0$. Further, if a term does not appear in a document, its weight in that document will also be reduced to 0, as $f_{t,d}=0$. On the other hand, a high weight in TF–IDF is reached by a high term frequency (in the given document) and a low document frequency of the term in the whole collection of documents.</p>
 </article>
  
       

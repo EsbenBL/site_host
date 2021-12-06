@@ -3,19 +3,19 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="TF-IDF within the Disciplines#To find out which concept/content are most definitive for each of the scientific disciplines, we have calculate the term frequency (TF) as well as the term frequency - inverse document frequency (TF-IDF) for each of the 5 fields.
-Furthermore, we have also calculated both TF and TF-IDF for each of the 21 identified network communities, to see if the community partition was meaningsful with regard to the content of the wikipages.">
+<meta name="description" content="Louvain Modularity#The Louvain algorithm partitions the network by finding the partition that optimizes modularity, defined as (Barabási eq. 9.12): \(M = \sum_{c=1}^{n_c}\left[\frac{L_c}{L}-\left(\frac{k_c}{2L}\right)^2\right]\), where \(n_c\)is the number of communities/partitions, \(L\)is the total number of links in the network, \(L_c\)is the total number of links within community \(C_c\), and \(k_c\)is the total degree of the nodes in this community (including links to nodes outside community \(C_c\)).">
 <meta name="theme-color" content="#FFFFFF">
-<meta name="color-scheme" content="light dark"><meta property="og:title" content="TF-IDF within the Disciplines" />
-<meta property="og:description" content="" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://esbenbl.github.io/site_host/docs/Analysis/text_analysis/tf_idf_field/" />
+<meta name="color-scheme" content="light dark"><meta property="og:title" content="Louvain Modularity" />
+<meta property="og:description" content="Louvain Modularity#The Louvain algorithm partitions the network by finding the partition that optimizes modularity, defined as (Barabási eq. 9.12): \(M = \sum_{c=1}^{n_c}\left[\frac{L_c}{L}-\left(\frac{k_c}{2L}\right)^2\right]\), where \(n_c\)is the number of communities/partitions, \(L\)is the total number of links in the network, \(L_c\)is the total number of links within community \(C_c\), and \(k_c\)is the total degree of the nodes in this community (including links to nodes outside community \(C_c\))." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://esbenbl.github.io/site_host/docs/methodology/Modularity/modularity/" /><meta property="article:section" content="docs" />
 
-<title>TF-IDF within the Disciplines | Network Communities of the Social Sciences</title>
+
+
+<title>Louvain Modularity | Network Communities of the Social Sciences</title>
 <link rel="manifest" href="https://esbenbl.github.io/site_host/manifest.json">
 <link rel="icon" href="https://esbenbl.github.io/site_host/favicon.png" type="image/x-icon">
-<link rel="stylesheet" href="https://esbenbl.github.io/site_host/book.min.95d69eb6bad8b9707ff2b5d8d9e31ce70a1b84f2ed7ffaf665ffcf00aa7993bd.css" integrity="sha256-ldaetrrYuXB/8rXY2eMc5wobhPLtf/r2Zf/PAKp5k70=" crossorigin="anonymous"><link rel="alternate" type="application/rss+xml" href="https://esbenbl.github.io/site_host/docs/Analysis/text_analysis/tf_idf_field/index.xml" title="Network Communities of the Social Sciences" />
-<!--
+<link rel="stylesheet" href="https://esbenbl.github.io/site_host/book.min.95d69eb6bad8b9707ff2b5d8d9e31ce70a1b84f2ed7ffaf665ffcf00aa7993bd.css" integrity="sha256-ldaetrrYuXB/8rXY2eMc5wobhPLtf/r2Zf/PAKp5k70=" crossorigin="anonymous"><!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
 -->
@@ -198,7 +198,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <input type="checkbox" id="section-775c8f3a0ae7cadabf98eb94d5f359b9" class="toggle" checked />
+    <input type="checkbox" id="section-775c8f3a0ae7cadabf98eb94d5f359b9" class="toggle"  />
     <label for="section-775c8f3a0ae7cadabf98eb94d5f359b9" class="flex justify-between">
       <a href="https://esbenbl.github.io/site_host/docs/Analysis/text_analysis/" class="">Text Analysis</a>
     </label>
@@ -214,7 +214,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="https://esbenbl.github.io/site_host/docs/Analysis/text_analysis/tf_idf_field/" class=" active">TF-IDF within the Disciplines</a>
+    <a href="https://esbenbl.github.io/site_host/docs/Analysis/text_analysis/tf_idf_field/" class="">TF-IDF within the Disciplines</a>
   
 
           
@@ -273,7 +273,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="https://esbenbl.github.io/site_host/docs/methodology/Modularity/modularity/" class="">Louvain Modularity</a>
+    <a href="https://esbenbl.github.io/site_host/docs/methodology/Modularity/modularity/" class=" active">Louvain Modularity</a>
   
 
         </li>
@@ -520,7 +520,7 @@ https://github.com/alex-shpak/hugo-book
     <img src="https://esbenbl.github.io/site_host/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <strong>TF-IDF within the Disciplines</strong>
+  <strong>Louvain Modularity</strong>
 
   <label for="toc-control">
     
@@ -534,172 +534,109 @@ https://github.com/alex-shpak/hugo-book
 
       
       
-  <article class="markdown"><h1 id="tf-idf-within-the-disciplines">
-  TF-IDF within the Disciplines
-  <a class="anchor" href="#tf-idf-within-the-disciplines">#</a>
+  <article class="markdown"><h1 id="louvain-modularity">
+  Louvain Modularity
+  <a class="anchor" href="#louvain-modularity">#</a>
 </h1>
-<p>To find out which concept/content are most definitive for each of the scientific disciplines, we have calculate the <code>term frequency</code> (TF) as well as the <code>term frequency - inverse document frequency</code> (TF-IDF) for each of the 5 fields.</p>
-<p>Furthermore, we have also calculated both TF and TF-IDF for each of the 21 identified network communities, to see if the community partition was meaningsful with regard to the content of the wikipages.</p>
-<p>For a further elaboration on both metrics follow 
-  <a href="https://sodas.ku.dk/people/Jonas_Pedersen__140x174.jpg">this link</a></p>
+<p>The Louvain algorithm partitions the network by finding the partition that optimizes modularity, defined as (Barabási eq. 9.12): 
+<link rel="stylesheet" href="https://esbenbl.github.io/site_host/katex/katex.min.css" />
+<script defer src="https://esbenbl.github.io/site_host/katex/katex.min.js"></script>
+<script defer src="https://esbenbl.github.io/site_host/katex/auto-render.min.js" onload="renderMathInElement(document.body);"></script><span>
+  \(M = \sum_{c=1}^{n_c}\left[\frac{L_c}{L}-\left(\frac{k_c}{2L}\right)^2\right]\)
+</span>
+, where <span>
+  \(n_c\)
+</span>
+ is the number of communities/partitions, <span>
+  \(L\)
+</span>
+ is the total number of links in the network, <span>
+  \(L_c\)
+</span>
+ is the total number of links within community <span>
+  \(C_c\)
+</span>
+, and <span>
+  \(k_c\)
+</span>
+ is the total degree of the nodes in this community (including links to nodes outside community <span>
+  \(C_c\)
+</span>
+). The Louvain algorithm works in 2 steps:</p>
+<ul>
+<li><strong>1) Modularity optimization</strong>: Each node in the network is assigned to its own community. Sequentially, each node, <span>
+  \(i\)
+</span>
+, is moved to the neighboring community, <span>
+  \(j\)
+</span>
+, that leads to the maximum change in modularity, <span>
+  \(\Delta M\)
+</span>
+. This is done repeadtly and sequentially until <span>
+  \(\Delta M = 0\)
+</span>
+, i.e. there is no change in modularity by moving any node to another community.  The change in modularity, when moving node <span>
+  \(i\)
+</span>
+ from one community to another, is calculated as (Barabási eq 9.58);
+<span>
+  \[    
+     \Delta M=\left[\frac{\sum_{in}&#43;2k_{i,in}}{2W} - \left(\frac{\sum_{tot}&#43;k_{i}}{2W}\right)^2 \right] - \left[\frac{\sum_{in}}{2W} - \left(\frac{\sum_{tot}}{2W}\right)^2 - \left(\frac{k_{i}}{2W}\right)^2 \right] 
+     \]
+</span>
 
-
-
-
-<div class="book-tabs"><input type="radio" class="toggle" name="tabs-uniqueid" id="tabs-uniqueid-0" checked="checked" />
-  <label for="tabs-uniqueid-0">TF</label>
-  <div class="book-tabs-content markdown-inner"><h1 id="tf-of-the-scientific-disciplines">
-  TF of the scientific disciplines
-  <a class="anchor" href="#tf-of-the-scientific-disciplines">#</a>
-</h1>
-<table border="0" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th>Rank of word based on TF →</th>
-      <th>1</th>
-      <th>2</th>
-      <th>3</th>
-      <th>4</th>
-      <th>5</th>
-    </tr>
-    <tr>
-      <th>↓ Scientific Field</th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>Anthropologist</th>
-      <td>university</td>
-      <td>anthropology</td>
-      <td>american</td>
-      <td>work</td>
-      <td>new</td>
-    </tr>
-    <tr>
-      <th>Economist</th>
-      <td>economics</td>
-      <td>economic</td>
-      <td>university</td>
-      <td>theory</td>
-      <td>new</td>
-    </tr>
-    <tr>
-      <th>Multiple</th>
-      <td>social</td>
-      <td>work</td>
-      <td>university</td>
-      <td>society</td>
-      <td>theory</td>
-    </tr>
-    <tr>
-      <th>Political Scientist</th>
-      <td>university</td>
-      <td>political</td>
-      <td>american</td>
-      <td>international</td>
-      <td>science</td>
-    </tr>
-    <tr>
-      <th>Psychologist</th>
-      <td>psychology</td>
-      <td>university</td>
-      <td>work</td>
-      <td>research</td>
-      <td>theory</td>
-    </tr>
-    <tr>
-      <th>Sociologist</th>
-      <td>university</td>
-      <td>social</td>
-      <td>sociology</td>
-      <td>work</td>
-      <td>new</td>
-    </tr>
-  </tbody>
-</table>
-<p>Here, we writes something clever about the TF-stuff.</div><input type="radio" class="toggle" name="tabs-uniqueid" id="tabs-uniqueid-1"  />
-  <label for="tabs-uniqueid-1">TF-IDF</label>
-  <div class="book-tabs-content markdown-inner"><h1 id="tf-idf-of-the-scientific-disciplines">
-  TF-IDF of the scientific disciplines
-  <a class="anchor" href="#tf-idf-of-the-scientific-disciplines">#</a>
-</h1>
-<table border="0" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th>Rank of word based on TF-IDF →</th>
-      <th>1</th>
-      <th>2</th>
-      <th>3</th>
-      <th>4</th>
-      <th>5</th>
-    </tr>
-    <tr>
-      <th>↓ Scientific Field</th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>Anthropologist</th>
-      <td>gorilla</td>
-      <td>apache</td>
-      <td>zuni</td>
-      <td>iroquois</td>
-      <td>olduvai</td>
-    </tr>
-    <tr>
-      <th>Economist</th>
-      <td>econometric</td>
-      <td>econometrics</td>
-      <td>macroeconomic</td>
-      <td>keynesian</td>
-      <td>macroeconomics</td>
-    </tr>
-    <tr>
-      <th>Multiple</th>
-      <td>khaldūn</td>
-      <td>habitus</td>
-      <td>samoan</td>
-      <td>hardt</td>
-      <td>psychoanalytic</td>
-    </tr>
-    <tr>
-      <th>Political Scientist</th>
-      <td>dodgson</td>
-      <td>arend</td>
-      <td>neorealism</td>
-      <td>ndp</td>
-      <td>nsc</td>
-    </tr>
-    <tr>
-      <th>Psychologist</th>
-      <td>apa</td>
-      <td>psychoanalytic</td>
-      <td>psychotherapy</td>
-      <td>jungian</td>
-      <td>therapy</td>
-    </tr>
-    <tr>
-      <th>Sociologist</th>
-      <td>wallpaper</td>
-      <td>sociologie</td>
-      <td>gemeinschaft</td>
-      <td>ortega</td>
-      <td>cyborg</td>
-    </tr>
-  </tbody>
-</table>
-<p>Here, we writes something clever about the TF-IDF-stuff.</div></div>
-
+where <span>
+  \(\sum_{in}\)
+</span>
+ is the sum of all the weights of links inside the community, <span>
+  \(C_j\)
+</span>
+, that <span>
+  \(i\)
+</span>
+ is moved into (=<span>
+  \(L_{C_{j}}\)
+</span>
+ in an undirected network); <span>
+  \(\sum_{tot}\)
+</span>
+ is the sum of all the weights of the links to nodes in <span>
+  \(C_j\)
+</span>
+; <span>
+  \(k_i\)
+</span>
+ is the weighted degree of <span>
+  \(i\)
+</span>
+; <span>
+  \(k_{i,in}\)
+</span>
+ is the sum of the weights of the links between <span>
+  \(i\)
+</span>
+ and other nodes in <span>
+  \(C_j\)
+</span>
+; and <span>
+  \(W\)
+</span>
+ is the sum of the weights of all links in the network. If <span>
+  \(\Delta M &lt; 0\)
+</span>
+, <span>
+  \(i\)
+</span>
+ stays in its current community.</li>
+<li><strong>2) Community Aggregation</strong>: A weighted network is created as an aggregate of the communities from the previous step: The nodes in the weighted network are the communities from step 1, the edge weights are the sum of edges between communities, and edges within a community becomes 2 self-loops.</li>
+</ul>
+<p>When the network of step 2 has been created, step 1 and 2 can be repeated on the new network until there is no increase in modularity. Collectively, the 2 steps are called a pass (Barabási Chap. 9). The 2 steps in the Louvain Algorithm are depicted below, where they are repeated for 2 passes (Barabási Image 9.37):</p>
+<center>
+<img src="https://esbenbl.github.io/site_host/louvain.jpg" alt="drawing" style="width:750px;"/>
+</center>
+<p>
+  <a href="https://esbenbl.github.io/site_host/docs/Analysis/nx_characteristic/community/">Back to the community networks</a></p>
 </article>
  
       

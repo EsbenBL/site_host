@@ -5,5 +5,17 @@
     <link>https://esbenbl.github.io/site_host/docs/Analysis/nx_characteristic/</link>
     <description>Recent content in Network Characteristics on Network Communities of the Social Sciences</description>
     <generator>Hugo -- gohugo.io</generator><atom:link href="https://esbenbl.github.io/site_host/docs/Analysis/nx_characteristic/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Communities</title>
+      <link>https://esbenbl.github.io/site_host/docs/Analysis/nx_characteristic/community/community/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://esbenbl.github.io/site_host/docs/Analysis/nx_characteristic/community/community/</guid>
+      <description>Community Detection#We have used Louvain Partition to make communities. In the plot below, we have plotted the community size for each of the 22 detected communities;
+The following network shows how the communities are distributed and clustered in the network;
+Compare this to the partition based on field;
+Note that this is based on the GCC.</description>
+    </item>
+    
   </channel>
 </rss>
