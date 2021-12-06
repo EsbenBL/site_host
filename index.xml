@@ -159,5 +159,14 @@ The Wikipedia Lists#Here we link to the five social science lists, which our 
       <description>Louvain Modularity#The Louvain algorithm partitions the network by finding the partition that optimizes modularity, defined as (Barabási eq. 9.12): \(M = \sum_{c=1}^{n_c}\left[\frac{L_c}{L}-\left(\frac{k_c}{2L}\right)^2\right]\), where \(n_c\)is the number of communities/partitions, \(L\)is the total number of links in the network, \(L_c\)is the total number of links within community \(C_c\), and \(k_c\)is the total degree of the nodes in this community (including links to nodes outside community \(C_c\)).</description>
     </item>
     
+    <item>
+      <title>Preprocess</title>
+      <link>https://esbenbl.github.io/site_host/docs/the_project/Preprocess/Preproces/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://esbenbl.github.io/site_host/docs/the_project/Preprocess/Preproces/</guid>
+      <description>Proprocessing the data#To construct this &amp;ldquo;community&amp;rdquo; of social scientists, we found inspiration by examining the Faculty of Social Science at Copenhagen University. The Social Science faculty have five overall departments: Sociology, Psychology, Economy, Anthropology, and Political Science. For each of these five categories we have a list of scientists on wikipedia. We used these five lists of scientists to find and all the scientists in our final dataset.</description>
+    </item>
+    
   </channel>
 </rss>

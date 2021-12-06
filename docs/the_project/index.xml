@@ -21,5 +21,14 @@ The Wikipedia Lists#Here we link to the five social science lists, which our 
   Here we have the different datasets which we used for the project.</description>
     </item>
     
+    <item>
+      <title>Preprocess</title>
+      <link>https://esbenbl.github.io/site_host/docs/the_project/Preprocess/Preproces/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://esbenbl.github.io/site_host/docs/the_project/Preprocess/Preproces/</guid>
+      <description>Proprocessing the data#To construct this &amp;ldquo;community&amp;rdquo; of social scientists, we found inspiration by examining the Faculty of Social Science at Copenhagen University. The Social Science faculty have five overall departments: Sociology, Psychology, Economy, Anthropology, and Political Science. For each of these five categories we have a list of scientists on wikipedia. We used these five lists of scientists to find and all the scientists in our final dataset.</description>
+    </item>
+    
   </channel>
 </rss>
