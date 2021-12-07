@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>hSBM Networks! on Network Communities of the Social Sciences</title>
+    <link>https://esbenbl.github.io/site_host/docs/Analysis/hsbm/hsbm_nx/</link>
+    <description>Recent content in hSBM Networks! on Network Communities of the Social Sciences</description>
+    <generator>Hugo -- gohugo.io</generator><atom:link href="https://esbenbl.github.io/site_host/docs/Analysis/hsbm/hsbm_nx/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>hSBM Discipline Network</title>
+      <link>https://esbenbl.github.io/site_host/docs/Analysis/hsbm/hsbm_nx/hsbm_field_nx/hsbm_field_nx/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://esbenbl.github.io/site_host/docs/Analysis/hsbm/hsbm_nx/hsbm_field_nx/hsbm_field_nx/</guid>
+      <description>We plot a bipartite scientist-topic network with edge weights based on the XX probabilities from the hSBM model. The nodes and edges are colored based on their scientific discipline.
+Alright, so.. it&amp;rsquo;s a hairball. To have a better shot at observing some kind of structure, we remove edges with weights below the 75%-quartile. Here we go;
+That&amp;rsquo;s better, Ganon!</description>
+    </item>
+    
+    <item>
+      <title>hSBM Community Network</title>
+      <link>https://esbenbl.github.io/site_host/docs/Analysis/hsbm/hsbm_nx/hsbm_com_nx/hsbm_com_nx/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://esbenbl.github.io/site_host/docs/Analysis/hsbm/hsbm_nx/hsbm_com_nx/hsbm_com_nx/</guid>
+      <description>We plot a bipartite scientist-topic network with edge weights based on the XX probabilities from the hSBM model. The nodes and edges are colored based on the identified communties from this network.
+Alright, so.. it&amp;rsquo;s a hairball. To have a better shot at observing some kind of structure, we remove edges with weights below the 75%-quartile. Here we go;
+That&amp;rsquo;s better, Ganon!</description>
+    </item>
+    
+  </channel>
+</rss>

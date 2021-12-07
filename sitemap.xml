@@ -2,6 +2,10 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://esbenbl.github.io/site_host/docs/Analysis/hsbm/hsbm_nx/hsbm_field_nx/hsbm_field_nx/</loc>
+  </url><url>
+    <loc>https://esbenbl.github.io/site_host/docs/Analysis/hsbm/topics/topics/</loc>
+  </url><url>
     <loc>https://esbenbl.github.io/site_host/docs/Analysis/text_analysis/tf_idf_field/</loc>
     <lastmod>2021-12-05T17:45:20+01:00</lastmod>
   </url><url>
@@ -11,11 +15,22 @@
     <loc>https://esbenbl.github.io/site_host/docs/Analysis/</loc>
     <lastmod>2021-12-05T17:45:20+01:00</lastmod>
   </url><url>
+    <loc>https://esbenbl.github.io/site_host/docs/Analysis/hsbm/hsbm_nx/hsbm_com_nx/hsbm_com_nx/</loc>
+  </url><url>
     <loc>https://esbenbl.github.io/site_host/docs/Analysis/nx_characteristic/</loc>
     <lastmod>2021-12-06T15:56:35+01:00</lastmod>
   </url><url>
+    <loc>https://esbenbl.github.io/site_host/docs/Analysis/hsbm/topics_disciplines/topics_field/</loc>
+  </url><url>
     <loc>https://esbenbl.github.io/site_host/docs/Analysis/text_analysis/</loc>
     <lastmod>2021-12-05T17:45:20+01:00</lastmod>
+  </url><url>
+    <loc>https://esbenbl.github.io/site_host/docs/Analysis/hsbm/topics_communities/topic_com/</loc>
+  </url><url>
+    <loc>https://esbenbl.github.io/site_host/docs/Analysis/hsbm/</loc>
+    <lastmod>2021-12-05T17:45:20+01:00</lastmod>
+  </url><url>
+    <loc>https://esbenbl.github.io/site_host/docs/Analysis/hsbm/hsbm_nx/</loc>
   </url><url>
     <loc>https://esbenbl.github.io/site_host/docs/methodology/</loc>
   </url><url>
