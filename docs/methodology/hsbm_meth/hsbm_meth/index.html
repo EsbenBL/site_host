@@ -3,19 +3,19 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Hierarchical Stochastic Block Model#What is it? Who is it? Where is it? and why is it?
-In order to further explore the content of the collected text files, we deploy a hierarchical stochastic block model (hSBM). This model will allow us to identify topics covered in the Wikipedia-pages and furthermore explore the degree to which social scientists of different disciplines and communities contribute to these topics. Thus, we attempt to identify if there are topics that are either characteristic for certain predefined groups, or if there are topics uniting scientists across the social sciences making the traditional boundaries redundant.">
+<meta name="description" content="Hierachical Stochastic Block Model#hSBM briefly explained The model is used to identify prevalent topics in a text corpora, and it relies on integration of techniques used for community detection in networks (Gerlach et al. 2018). Another option for us could have been latent Dirichlet allocation (LDA), but hSBM has proven to perform better than the more widely used LDA (ibid). Topics can be identified by the hSBM by representing the text corpora as a bipartite network in which nodes are documents and words, and the weight of the edges connecting nodes are determined by word-occurrences in each document.">
 <meta name="theme-color" content="#FFFFFF">
 <meta name="color-scheme" content="light dark"><meta property="og:title" content="hSBM" />
-<meta property="og:description" content="" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://esbenbl.github.io/site_host/docs/Analysis/hsbm/" />
+<meta property="og:description" content="Hierachical Stochastic Block Model#hSBM briefly explained The model is used to identify prevalent topics in a text corpora, and it relies on integration of techniques used for community detection in networks (Gerlach et al. 2018). Another option for us could have been latent Dirichlet allocation (LDA), but hSBM has proven to perform better than the more widely used LDA (ibid). Topics can be identified by the hSBM by representing the text corpora as a bipartite network in which nodes are documents and words, and the weight of the edges connecting nodes are determined by word-occurrences in each document." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://esbenbl.github.io/site_host/docs/methodology/hsbm_meth/hsbm_meth/" /><meta property="article:section" content="docs" />
+
+
 
 <title>hSBM | Network Communities of the Social Sciences</title>
 <link rel="manifest" href="https://esbenbl.github.io/site_host/manifest.json">
 <link rel="icon" href="https://esbenbl.github.io/site_host/favicon.png" type="image/x-icon">
-<link rel="stylesheet" href="https://esbenbl.github.io/site_host/book.min.95d69eb6bad8b9707ff2b5d8d9e31ce70a1b84f2ed7ffaf665ffcf00aa7993bd.css" integrity="sha256-ldaetrrYuXB/8rXY2eMc5wobhPLtf/r2Zf/PAKp5k70=" crossorigin="anonymous"><link rel="alternate" type="application/rss+xml" href="https://esbenbl.github.io/site_host/docs/Analysis/hsbm/index.xml" title="Network Communities of the Social Sciences" />
-<!--
+<link rel="stylesheet" href="https://esbenbl.github.io/site_host/book.min.95d69eb6bad8b9707ff2b5d8d9e31ce70a1b84f2ed7ffaf665ffcf00aa7993bd.css" integrity="sha256-ldaetrrYuXB/8rXY2eMc5wobhPLtf/r2Zf/PAKp5k70=" crossorigin="anonymous"><!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
 -->
@@ -255,9 +255,9 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <input type="checkbox" id="section-e47f09859b939ec01384c9cc0a5ca389" class="toggle" checked />
+    <input type="checkbox" id="section-e47f09859b939ec01384c9cc0a5ca389" class="toggle"  />
     <label for="section-e47f09859b939ec01384c9cc0a5ca389" class="flex justify-between">
-      <a href="https://esbenbl.github.io/site_host/docs/Analysis/hsbm/" class="active">hSBM</a>
+      <a href="https://esbenbl.github.io/site_host/docs/Analysis/hsbm/" class="">hSBM</a>
     </label>
   
 
@@ -367,7 +367,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="https://esbenbl.github.io/site_host/docs/methodology/hsbm_meth/hsbm_meth/" class="">hSBM</a>
+    <a href="https://esbenbl.github.io/site_host/docs/methodology/hsbm_meth/hsbm_meth/" class=" active">hSBM</a>
   
 
         </li>
@@ -472,18 +472,31 @@ https://github.com/alex-shpak/hugo-book
 
       
       
-  <article class="markdown"><h1 id="hierarchical-stochastic-block-model">
-  Hierarchical Stochastic Block Model
-  <a class="anchor" href="#hierarchical-stochastic-block-model">#</a>
+  <article class="markdown"><h1 id="hierachical-stochastic-block-model">
+  Hierachical Stochastic Block Model
+  <a class="anchor" href="#hierachical-stochastic-block-model">#</a>
 </h1>
+<p><strong>hSBM briefly explained</strong> <br><br>
+The model is used to identify prevalent topics in a text corpora, and it relies on integration of techniques used for community detection in networks <a href="https://www.science.org/doi/10.1126/sciadv.aaq1360?fbclid=IwAR2pcJIWeJkYmA_e-5XHaHJ_2iggFPXqIToTDkuz5LOm_7jAYKwx-pprVSY" target="_blank">(Gerlach et al. 2018)</a>. Another option for us could have been latent Dirichlet allocation (LDA), but hSBM has proven to perform better than the more widely used LDA (ibid). Topics can be identified by the hSBM by representing the text corpora as a bipartite network in which nodes are documents and words, and the weight of the edges connecting nodes are determined by word-occurrences in each document. The model automatically detects the relevant number of topics and makes a hierarchical clustering of nodes (ibid.). In the section below, we illustrate the resulting bipartite network and elaborate on the even further on the method. 
+Through the hSBM we identified a list of topics and corresponding probabilities for each document to belong to a certain topic. We stored this information in a dataframe to be analysed in this notebook.
+<br><br> 
+It was only possible to run the hSBM in Google Colab. We therefore refer to our Colab for the code and to the folder.</p>
+<ul>
+<li>
+<p><a href="https://colab.research.google.com/drive/10_H2VPqhq69gVBz0nWEyC8aqVadAq9lc?usp=sharing" target="_blank">Link to notebook in Google Colab</a></p>
+</li>
+<li>
+<p><a href="https://drive.google.com/drive/folders/11M7ne6PpvLyftIMmKLiVZOoqLdcY018C?usp=sharing" target="_blank">Link to folder in Google Colab</a></p>
+</li>
+</ul>
 <p>
-  <a href="https://esbenbl.github.io/site_host/docs/methodology/hsbm_meth/hsbm_meth/">What is it? Who is it? Where is it? and why is it?</a></p>
-<p>In order to further explore the content of the collected text files, we deploy a hierarchical stochastic block model (hSBM). This model will allow us to identify topics covered in the Wikipedia-pages and furthermore explore the degree to which social scientists of different disciplines and communities contribute to these topics. Thus, we attempt to identify if there are topics that are either characteristic for certain predefined groups, or if there are topics uniting scientists across the social sciences making the traditional boundaries redundant.<br><br></p>
-<p>For an introductory reading into HSBM, we recommend 
-  <a href="https://www.science.org/doi/10.1126/sciadv.aaq1360">Gerlach et al. 2018</a>.</p>
-<p>We have identified 21 relevant topics, and named them based on the 10 most prevalent words within each topics.</p>
-<p>
-  <img src="https://esbenbl.github.io/site_host/topics_barplots.png" alt="hSMB Topics" /></p>
+  <img src="https://esbenbl.github.io/site_host/doc_word_hsbm.png" alt="Bipartite document-word network" /></p>
+<p>Above the hSBM model is visualized. Document-nodes are on the left, and word-nodes are on the right. The nodes of words and documents are grouped on multiple levels. On the highest level (in the center of the graph) all nodes belong to the same group, on the second highest level the network is split into word- and document-nodes. We are interested in the word-groups as these correspond to topics of the documents. The SBM has a hierarchical structure which implies that topics at the lowest levels (far to the right) contain more granular information about the content of the documents, whereas topics at higher levels are clusters of the lower level topics and, thus, more aggregate <a href="https://www.science.org/doi/10.1126/sciadv.aaq1360?fbclid=IwAR2pcJIWeJkYmA_e-5XHaHJ_2iggFPXqIToTDkuz5LOm_7jAYKwx-pprVSY" target="_blank">(Gerlach et al. 2018)</a>. <br><br>
+The hSBM generates 397 topics at Level 0, 59 topics at Level 1, 11 topics at Level 2, 2 topics at Level 3, and 1 topic at Level 4. <br><br>
+The documents on the left side are sorted such that the disciplines appear alphabethically, meaning that anthropologists are the first nodes and sociologists are the last. The number of documents vary within each discipline, and thus we show the order in the table above. From the visualisation above we seek to give a sense of how some document-nodes seem to cluster in what in some cases might correspond to disciplinary groupings. This is especially prevalent for the yellow cluster document nodes in the bottom indicate the sociologists.
+<br><br>
+
+  <a href="https://esbenbl.github.io/site_host/docs/Analysis/hsbm/">Back to the hSBM analysis</a></p>
 </article>
  
       

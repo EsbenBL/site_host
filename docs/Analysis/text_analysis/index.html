@@ -3,14 +3,15 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Text Analysis#In this section, we&rsquo;ll dive deeper into to content of the scientists&#39; wikipages, and what they are actually talking about (aside from each other).">
+<meta name="description" content="Text Analysis#In this section, we will delve deeper into the textual content of both the disciplines and the identified communities.
+Conclusion on Text Analysis#In this section, we have examined the textual content of the social scientists’ Wikipedia-pages. Using TF- and TF-IDF, we examined which words were the most definitory within and distinguishing across both the social disciplines and the identified communities, respectively. We examined the partition of the economists into two separate communities which was identified in the community detection.">
 <meta name="theme-color" content="#FFFFFF">
-<meta name="color-scheme" content="light dark"><meta property="og:title" content="Text Analysis" />
+<meta name="color-scheme" content="light dark"><meta property="og:title" content="TF-IDF" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://esbenbl.github.io/site_host/docs/Analysis/text_analysis/" />
 
-<title>Text Analysis | Network Communities of the Social Sciences</title>
+<title>TF-IDF | Network Communities of the Social Sciences</title>
 <link rel="manifest" href="https://esbenbl.github.io/site_host/manifest.json">
 <link rel="icon" href="https://esbenbl.github.io/site_host/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="https://esbenbl.github.io/site_host/book.min.95d69eb6bad8b9707ff2b5d8d9e31ce70a1b84f2ed7ffaf665ffcf00aa7993bd.css" integrity="sha256-ldaetrrYuXB/8rXY2eMc5wobhPLtf/r2Zf/PAKp5k70=" crossorigin="anonymous"><link rel="alternate" type="application/rss+xml" href="https://esbenbl.github.io/site_host/docs/Analysis/text_analysis/index.xml" title="Network Communities of the Social Sciences" />
@@ -199,7 +200,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-775c8f3a0ae7cadabf98eb94d5f359b9" class="toggle" checked />
     <label for="section-775c8f3a0ae7cadabf98eb94d5f359b9" class="flex justify-between">
-      <a href="https://esbenbl.github.io/site_host/docs/Analysis/text_analysis/" class="active">Text Analysis</a>
+      <a href="https://esbenbl.github.io/site_host/docs/Analysis/text_analysis/" class="active">TF-IDF</a>
     </label>
   
 
@@ -262,19 +263,6 @@ https://github.com/alex-shpak/hugo-book
 
           
   <ul>
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="https://esbenbl.github.io/site_host/docs/Analysis/hsbm/topics/topics/" class="">hSBM Topics</a>
-  
-
-        </li>
-      
     
       
         <li>
@@ -379,6 +367,19 @@ https://github.com/alex-shpak/hugo-book
   
 
   
+    <a href="https://esbenbl.github.io/site_host/docs/methodology/hsbm_meth/hsbm_meth/" class="">hSBM</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
     <a href="https://esbenbl.github.io/site_host/docs/methodology/Modularity/modularity/" class="">Louvain Modularity</a>
   
 
@@ -457,7 +458,7 @@ https://github.com/alex-shpak/hugo-book
     <img src="https://esbenbl.github.io/site_host/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <strong>Text Analysis</strong>
+  <strong>TF-IDF</strong>
 
   <label for="toc-control">
     
@@ -475,7 +476,18 @@ https://github.com/alex-shpak/hugo-book
   Text Analysis
   <a class="anchor" href="#text-analysis">#</a>
 </h1>
-<p>In this section, we&rsquo;ll dive deeper into to content of the scientists' wikipages, and what they are actually talking about (aside from each other).</p>
+<p>In this section, we will delve deeper into the textual content of both the disciplines and the identified communities.</p>
+<h2 id="conclusion-on-text-analysis">
+  Conclusion on Text Analysis
+  <a class="anchor" href="#conclusion-on-text-analysis">#</a>
+</h2>
+<p>In this section, we have examined the textual content of the social scientists’ Wikipedia-pages.
+Using TF- and TF-IDF, we examined which words were the most definitory within and distinguishing across both the social disciplines and the identified communities, respectively. <br><br></p>
+<p>We examined the partition of the economists into two separate communities which was identified in 
+  <a href="https://esbenbl.github.io/site_host/docs/Analysis/nx_characteristic/community/community/#community-network">the community detection</a>. We found that the two economist communities were not substantially distinguishable based on their textual content. <br><br></p>
+<p>Further, we reinforced that many of the largest communities are indeed aligned with the social disciplines, as it was quite easy to see which community belonged to which discipline, based solely on their highest-ranking TF- and TF-IDF words. Among the larger communities, only the <code>Marx - Freud - Weber</code> community was hard to place within a singular discipline as its most prevalent words were <code>philosophy</code>, <code>idea</code>, and <code>philosopher</code> based on TF-IDF. Perhaps, that would be a sensible distinction to include in the social sciences.  <br><br></p>
+<p>With regards to the discipline categorizations, we found that ’multiple’ is hard to place within one specific discipline. Its high-ranking TF-IDF words came from multiple dissimilar disciplines and theoretical traditions. <br><br></p>
+<p>Generally, we have not encountered any major surprising tendencies. The classical division into five major social disciplines is reasonably reflected both regarding the network&rsquo;s wiring, and the textual content from the Wikipedia-pages. However, we are not yet done with exploring our data. In the following section, we will delve deeper into the content on the scientists' Wikipedia-pages and try to identify communities based on shared topics. To identify both communities and topics, we will use the state-of-the-art network community detection model; hSBM.</p>
 </article>
  
       

@@ -14,7 +14,7 @@
       <description>Degree Distribution#We present the degree distribution of the network.
 Here is the in-degree distribution:
 And here is the out-degree distribution:
-How about that, Ganon?</description>
+Both the in- and out-degree distribution appear to be powerlaw distributed, meaning that the growth of the network is linearly biased by the degree distributions of the pre-existing nodes in the network. This is indicated by the presence of few very high degree nodes, while most of the nodes have a much smaller degree in comparison.</description>
     </item>
     
     <item>
@@ -24,9 +24,8 @@ How about that, Ganon?</description>
       
       <guid>https://esbenbl.github.io/site_host/docs/Analysis/nx_characteristic/basic_stats/top_connected/most_connected/</guid>
       <description>Most Connected Nodes#Below we plot the most connected nodes, both with regard to in- and out-degree:
-Here is the 50 highest in-degree nodes:
-And here is the 50 highest out-degree nodes:
-How about that, Ganon?</description>
+Highest In-degree Nodes#Here is the 50 highest in-degree nodes:
+Looking at the most connected nodes with regard to in-degree, we see many of the &amp;ldquo;founding fathers&amp;rdquo; of the social science disciplines. The most connected node is Karl Marx, the developer of the highly influential mode of state governance, &amp;ldquo;Communism&amp;rdquo;, and a central figure in both sociology and economy.</description>
     </item>
     
   </channel>

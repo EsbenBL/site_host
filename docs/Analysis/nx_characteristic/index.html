@@ -4,9 +4,10 @@
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="Network Characteristics#In this section, we present basic network characteristic of our network, and carry out community detection&hellip;just because.
+
 Basic Statistics We present the network, some degree distributions, and stuff like that.
 Community We see how communities are formed in the network, based on the link distribution.
-.nx_gif {max-width: 100%;}">
+.nx_gif {max-width: 100%;}Conclusion on Basic Statistics#We see that the in-degrees in the network are powerlaw distributed, and argue that this makes sense, as most of the high in-degree nodes are &ldquo;classical&rdquo; theorists.">
 <meta name="theme-color" content="#FFFFFF">
 <meta name="color-scheme" content="light dark"><meta property="og:title" content="Network Characteristics" />
 <meta property="og:description" content="" />
@@ -202,7 +203,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-775c8f3a0ae7cadabf98eb94d5f359b9" class="toggle"  />
     <label for="section-775c8f3a0ae7cadabf98eb94d5f359b9" class="flex justify-between">
-      <a href="https://esbenbl.github.io/site_host/docs/Analysis/text_analysis/" class="">Text Analysis</a>
+      <a href="https://esbenbl.github.io/site_host/docs/Analysis/text_analysis/" class="">TF-IDF</a>
     </label>
   
 
@@ -265,19 +266,6 @@ https://github.com/alex-shpak/hugo-book
 
           
   <ul>
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="https://esbenbl.github.io/site_host/docs/Analysis/hsbm/topics/topics/" class="">hSBM Topics</a>
-  
-
-        </li>
-      
     
       
         <li>
@@ -374,6 +362,19 @@ https://github.com/alex-shpak/hugo-book
 
           
   <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://esbenbl.github.io/site_host/docs/methodology/hsbm_meth/hsbm_meth/" class="">hSBM</a>
+  
+
+        </li>
+      
     
       
         <li>
@@ -482,7 +483,7 @@ https://github.com/alex-shpak/hugo-book
 <div class="book-columns flex flex-wrap">
 
   <div class="flex-even markdown-inner">
-    <br>
+    <p><br><br><br><br><br></p>
 <p>
   <a href="https://esbenbl.github.io/site_host/docs/Analysis/nx_characteristic/basic_stats/"><strong>Basic Statistics</strong></a>
 <br>
@@ -507,6 +508,17 @@ We see how communities are formed in the network, based on the link distribution
 
 </div>
 
+<h2 id="conclusion-on-basic-statistics">
+  Conclusion on Basic Statistics
+  <a class="anchor" href="#conclusion-on-basic-statistics">#</a>
+</h2>
+<p>We see that the in-degrees in the network are powerlaw distributed, and argue that this makes sense, as most of the high in-degree nodes are &ldquo;classical&rdquo; theorists. New theorists will probably tend to either build on or criticize these &ldquo;classical&rdquo; theorists which results in introducing the preferential attachment mechanism and a scale-free property to the networks in-degree distributions.</p>
+<p>Lastly, we stated that the out-degrees were in the random network regime based on the degree exponent. The fact that the out-degree distribution does not have the scale-free property, while the in-degree distribution does, is probably because the in-degree is an accumulation of all the Wikipedia-pages while the out-degree is only based on a single Wikipedia-page.</p>
+<h2 id="conclusion-on-communities">
+  Conclusion on Communities
+  <a class="anchor" href="#conclusion-on-communities">#</a>
+</h2>
+<p>In this section, we have examined the wiring structure of the network by using Louvain Partition to identify communities. We identified 22 communities and compared them to the network partition made by the established social science disciplines. Overall, the largest communities partitioned the network very similarly to the discipline partition. However, using community detection, we identified a potential to further nuance the disciplinary boundaries, as we identified one large community that contained many sociologists but also many of the nodes classified as &ldquo;multiple&rdquo;.</p>
 </article>
  
       

@@ -202,7 +202,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-775c8f3a0ae7cadabf98eb94d5f359b9" class="toggle"  />
     <label for="section-775c8f3a0ae7cadabf98eb94d5f359b9" class="flex justify-between">
-      <a href="https://esbenbl.github.io/site_host/docs/Analysis/text_analysis/" class="">Text Analysis</a>
+      <a href="https://esbenbl.github.io/site_host/docs/Analysis/text_analysis/" class="">TF-IDF</a>
     </label>
   
 
@@ -265,19 +265,6 @@ https://github.com/alex-shpak/hugo-book
 
           
   <ul>
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="https://esbenbl.github.io/site_host/docs/Analysis/hsbm/topics/topics/" class="">hSBM Topics</a>
-  
-
-        </li>
-      
     
       
         <li>
@@ -374,6 +361,19 @@ https://github.com/alex-shpak/hugo-book
 
           
   <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://esbenbl.github.io/site_host/docs/methodology/hsbm_meth/hsbm_meth/" class="">hSBM</a>
+  
+
+        </li>
+      
     
       
         <li>
@@ -487,6 +487,20 @@ https://github.com/alex-shpak/hugo-book
 <p>As expected from the initial examination of the plotted network, most of the nodes are partitioned onto 5-8 very large communities, followed by a series of remarkably smaller communities.
 The plot below shows the distribution of community size, where each community is named after the 3 most connected nodes in the given community.
 <img src="https://esbenbl.github.io/site_host/community_size.png" alt="Community Network" style="width:800px;"/></p>
+<p>We immediately notice a big variation in size with the largest community consisting of more than 400 scientists and the smallest of just two scientists. Overall, the 8 largest communities contain nearly all of the scientists (97%).</p>
+<p>Looking at the three highest degree nodes within each of the communities, we find that the largest and third largest communities are centered around economists, with Keynes, Smith, and Friedman, and Kahneman, Acemoglu, and Mankiw as their respective highest degree nodes. From the community size plot alone, it is hard to tell whether the rest of these two communities' nodes are also economists. We will explore this by looking into the community network plot further down.</p>
+<p>Regarding the other disciplines, most of them seem to be represented among the top 3 connected nodes in a community:</p>
+<ul>
+<li>Wundt, Piaget, and Jung are all psychologist.</li>
+<li>Malinowski, Polanyi, and Boas are all anthropologist.</li>
+<li>Kissinger, Waltz, and Huntington are all political scientists.</li>
+</ul>
+<p>Sociology does not have a clear cut community. However, the fourth largest community with Parsons, Dewey, and Goffman could represent a community of sociologists. Even though, John Dewey is a psychologist by training, he was mostly occupied with social psychology which is related to sociology. Again, we would have to further explore the rest of the community nodes to be able to expand on this.</p>
+<p>The second largest community have Marx, Freud, and Weber as its highest degree nodes. Both Marx and Weber appear on more than one of the social science Wikipedia-lists, and are therefore classified as &ldquo;Multiple&rdquo;, which makes them a bit more difficult to interpret. It Is difficult to ascribe either one to a single discipline. On 
+  <a href="https://en.wikipedia.org/wiki/Max_Weber">Weber&rsquo;s</a> Wikipedia-page he is affiliated with sociology, history, law, and political economy, while 
+  <a href="https://en.wikipedia.org/wiki/Karl_Marx">Marx</a> is both sociologist, economist, historian, and philosopher according to his Wikipedia-page. The fact that both Marx and Weber are in the same community might indicate that this community does not follow the norm of a singular affiliation with either of the five social science disciplines. The &ldquo;Multiple&rdquo; category will be discussed further in the discussion section and throughout the analysis when relevant.</p>
+<p>With regard to Freud, who is also in the Marx-Freud-Weber community, both Marx and Freud are known for the <a href="https://en.wikipedia.org/wiki/Hermeneutics_of_suspicion" target="_blank"> hermeneutics of suspicion</a>, though Freud is more categorizable as a psychologist. Hermeneutics of suspicion is a philosophical tradition which might further indicate that the community is not easily definable.</p>
+<p>In the next section, we will plot the community network to get a better idea of how the rest of the community nodes are distributed and structured in the network.</p>
 <h2 id="community-network">
   Community Network
   <a class="anchor" href="#community-network">#</a>
@@ -499,6 +513,12 @@ The plot below shows the distribution of community size, where each community is
 </h2>
 <p>We can compare the network partition from the Louvain algorithm to the partition based on the conventional 5 social science disciplines;</p>
 <img src="https://esbenbl.github.io/site_host/gcc_network.png" alt="Field Network" style="width:800px;"/>
+<p>In the above figures of the network the different sizes of the communities become clear. With the two largest networks being easily observable in the center, and the smallest networks being hard to distinguish. Comparing the community network with the discipline network, the communities seem to follow the disciplines rather closely.</p>
+<p>As mentioned in community size, the largest and third largest communities appear to be centered around economists as both communities had economists as their 3 highest degree nodes. When we compare the community network and discipline network, it becomes apparent that the remaining scientists within the two communities' nodes are also economists. We have thus further nuanced the economic discipline as it can be subdivided into two exclusive economist communities. In 
+  <a href="https://esbenbl.github.io/site_host/docs/Analysis/text_analysis/tf_idf_com/">TF-IDF</a> we will examine whether these two economist communities are also distinguishable with regard to the text content on their Wikipedia-pages.</p>
+<p>Furthermore, it also seems that the large sociology cluster in the discipline network has been split in two. One part constitutes a large proportion of the second largest community Marx-Freud-Weber, while the other part is placed in the fourth largest community Parsons-Dewey-Goffman.</p>
+<p>We see that the anthropological discipline is clearly identified by the Boas-Polanyi-Malinowski community. Psychology is detected nicely by the Wundt-Piaget-Jung community, and political science have most of its nodes placed in the Huntington-Waltz-Kissinger community.</p>
+<p>Both the subdivision of the sociological and economic discipline contains many of the &ldquo;multiple&rdquo; nodes.</p>
 </article>
  
       

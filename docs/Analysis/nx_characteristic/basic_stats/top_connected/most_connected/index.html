@@ -4,15 +4,13 @@
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="Most Connected Nodes#Below we plot the most connected nodes, both with regard to in- and out-degree:
-Here is the 50 highest in-degree nodes:
-And here is the 50 highest out-degree nodes:
-How about that, Ganon?">
+Highest In-degree Nodes#Here is the 50 highest in-degree nodes:
+Looking at the most connected nodes with regard to in-degree, we see many of the &ldquo;founding fathers&rdquo; of the social science disciplines. The most connected node is Karl Marx, the developer of the highly influential mode of state governance, &ldquo;Communism&rdquo;, and a central figure in both sociology and economy.">
 <meta name="theme-color" content="#FFFFFF">
 <meta name="color-scheme" content="light dark"><meta property="og:title" content="Most Connected Nodes" />
 <meta property="og:description" content="Most Connected Nodes#Below we plot the most connected nodes, both with regard to in- and out-degree:
-Here is the 50 highest in-degree nodes:
-And here is the 50 highest out-degree nodes:
-How about that, Ganon?" />
+Highest In-degree Nodes#Here is the 50 highest in-degree nodes:
+Looking at the most connected nodes with regard to in-degree, we see many of the &ldquo;founding fathers&rdquo; of the social science disciplines. The most connected node is Karl Marx, the developer of the highly influential mode of state governance, &ldquo;Communism&rdquo;, and a central figure in both sociology and economy." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://esbenbl.github.io/site_host/docs/Analysis/nx_characteristic/basic_stats/top_connected/most_connected/" /><meta property="article:section" content="docs" />
 
@@ -206,7 +204,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-775c8f3a0ae7cadabf98eb94d5f359b9" class="toggle"  />
     <label for="section-775c8f3a0ae7cadabf98eb94d5f359b9" class="flex justify-between">
-      <a href="https://esbenbl.github.io/site_host/docs/Analysis/text_analysis/" class="">Text Analysis</a>
+      <a href="https://esbenbl.github.io/site_host/docs/Analysis/text_analysis/" class="">TF-IDF</a>
     </label>
   
 
@@ -269,19 +267,6 @@ https://github.com/alex-shpak/hugo-book
 
           
   <ul>
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="https://esbenbl.github.io/site_host/docs/Analysis/hsbm/topics/topics/" class="">hSBM Topics</a>
-  
-
-        </li>
-      
     
       
         <li>
@@ -378,6 +363,19 @@ https://github.com/alex-shpak/hugo-book
 
           
   <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://esbenbl.github.io/site_host/docs/methodology/hsbm_meth/hsbm_meth/" class="">hSBM</a>
+  
+
+        </li>
+      
     
       
         <li>
@@ -483,11 +481,29 @@ https://github.com/alex-shpak/hugo-book
   <a class="anchor" href="#most-connected-nodes">#</a>
 </h1>
 <p>Below we plot the most connected nodes, both with regard to in- and out-degree:</p>
+<h2 id="highest-in-degree-nodes">
+  Highest In-degree Nodes
+  <a class="anchor" href="#highest-in-degree-nodes">#</a>
+</h2>
 <p>Here is the 50 highest in-degree nodes:</p>
 <img src="https://esbenbl.github.io/site_host/top_in_deg.png" alt="In-degree distribution" style="width:800px;"/>
+<p>Looking at the most connected nodes with regard to in-degree, we see many of the &ldquo;founding fathers&rdquo; of the social science disciplines. The most connected node is Karl Marx, the developer of the highly influential mode of state governance, &ldquo;Communism&rdquo;, and a central figure in both sociology and economy. The second most connected node is John Maynard Keynes - a highly influential economist - followed by Sigmund Freud who pioneered psychoanalysis.</p>
+<p>This might explain the powerlaw distribution of the in-degrees. Generally, we see that most of the high in-degree nodes are &ldquo;older&rdquo; and &ldquo;classical&rdquo; theorists. It makes sense that many of the newer theorists tend to either draw inspiration from or stand in opposition to the &ldquo;classical&rdquo; theorists who established entire theoretical traditions and analytical approaches like Marxism, Keynesian, Freudian, Weberian, and economic liberalism, to name a few. Thus, the scale-free property of the network becomes apparent because of the preferential attachment of new theorists.</p>
+<p><strong>Fun fact</strong>, within the social sciences, a concept very similar to the scale-free network property was developed by the sociologist <a href="https://www.science.org/doi/10.1126/science.159.3810.56" target="_blank">Robert Merton in 1968</a>. He called it &ldquo;The Matthew Effect&rdquo;, and it concerned a &ldquo;rich-get-richer&rdquo; mechanism in relation to recognition in the scientific community. Years later, in 1999, Barabasi &amp; Albert identified a similar mechanism within the field of network science, namely the scale-free powerlaw distribution of many real world networks <a href="https://www.researchgate.net/publication/12779869_Albert_R_Emergence_of_Scaling_in_Random_Networks_Science_286_509-512" target="_blank">(Barabasi &amp; Albert 1999)</a>.</p>
+<h2 id="highest-out-degree-nodes">
+  Highest Out-degree Nodes
+  <a class="anchor" href="#highest-out-degree-nodes">#</a>
+</h2>
 <p>And here is the 50 highest out-degree nodes:</p>
 <img src="https://esbenbl.github.io/site_host/top_out_deg.png" alt="Out-degree distribution" style="width:800px;"/>
-<p>How about that, Ganon?</p>
+Based on the degree exponent, we saw that the out-degrees do not follow a power-law, but are in the random network regime. Arguably, a degree exponent of 
+<link rel="stylesheet" href="https://esbenbl.github.io/site_host/katex/katex.min.css" />
+<script defer src="https://esbenbl.github.io/site_host/katex/katex.min.js"></script>
+<script defer src="https://esbenbl.github.io/site_host/katex/auto-render.min.js" onload="renderMathInElement(document.body);"></script><span>
+  \(\gamma = 4.40\)
+</span>
+   is in the vicinity of the scale-free regime compared to the degree exponent of a completely random network. Thus, we see that there are particularly high degree nodes (hub-like), such as Parsons, Hayek and Keynes. 
+<p>It makes sense that the out-degrees do not have the scale-free property while the in-degrees do. The in-degree is an accumulation of all the Wikipedia-pages, while the out-degree is only based on a single page. However, one must give the writer of Parsons’ page credit for his tenacious effort at mentioning nearly 90 people.</p>
 </article>
  
       

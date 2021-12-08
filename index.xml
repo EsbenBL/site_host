@@ -17,16 +17,6 @@
     </item>
     
     <item>
-      <title>hSBM Topics</title>
-      <link>https://esbenbl.github.io/site_host/docs/Analysis/hsbm/topics/topics/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://esbenbl.github.io/site_host/docs/Analysis/hsbm/topics/topics/</guid>
-      <description>Using hSBM we have identified 21 relevant topics.
-</description>
-    </item>
-    
-    <item>
       <title>hSBM Community Network</title>
       <link>https://esbenbl.github.io/site_host/docs/Analysis/hsbm/hsbm_nx/hsbm_com_nx/hsbm_com_nx/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -68,6 +58,15 @@ We&amp;rsquo;ll start with creating a new site with a very basic template.</desc
     </item>
     
     <item>
+      <title>hSBM</title>
+      <link>https://esbenbl.github.io/site_host/docs/methodology/hsbm_meth/hsbm_meth/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://esbenbl.github.io/site_host/docs/methodology/hsbm_meth/hsbm_meth/</guid>
+      <description>Hierachical Stochastic Block Model#hSBM briefly explained The model is used to identify prevalent topics in a text corpora, and it relies on integration of techniques used for community detection in networks (Gerlach et al. 2018). Another option for us could have been latent Dirichlet allocation (LDA), but hSBM has proven to perform better than the more widely used LDA (ibid). Topics can be identified by the hSBM by representing the text corpora as a bipartite network in which nodes are documents and words, and the weight of the edges connecting nodes are determined by word-occurrences in each document.</description>
+    </item>
+    
+    <item>
       <title>Communities</title>
       <link>https://esbenbl.github.io/site_host/docs/Analysis/nx_characteristic/community/community/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -102,7 +101,7 @@ The Wikipedia Lists#Here we link to the five social science lists, which our 
       <description>Degree Distribution#We present the degree distribution of the network.
 Here is the in-degree distribution:
 And here is the out-degree distribution:
-How about that, Ganon?</description>
+Both the in- and out-degree distribution appear to be powerlaw distributed, meaning that the growth of the network is linearly biased by the degree distributions of the pre-existing nodes in the network. This is indicated by the presence of few very high degree nodes, while most of the nodes have a much smaller degree in comparison.</description>
     </item>
     
     <item>
@@ -121,9 +120,8 @@ How about that, Ganon?</description>
       
       <guid>https://esbenbl.github.io/site_host/docs/Analysis/nx_characteristic/basic_stats/top_connected/most_connected/</guid>
       <description>Most Connected Nodes#Below we plot the most connected nodes, both with regard to in- and out-degree:
-Here is the 50 highest in-degree nodes:
-And here is the 50 highest out-degree nodes:
-How about that, Ganon?</description>
+Highest In-degree Nodes#Here is the 50 highest in-degree nodes:
+Looking at the most connected nodes with regard to in-degree, we see many of the &amp;ldquo;founding fathers&amp;rdquo; of the social science disciplines. The most connected node is Karl Marx, the developer of the highly influential mode of state governance, &amp;ldquo;Communism&amp;rdquo;, and a central figure in both sociology and economy.</description>
     </item>
     
     <item>

@@ -6,6 +6,15 @@
     <description>Recent content in Methodology on Network Communities of the Social Sciences</description>
     <generator>Hugo -- gohugo.io</generator><atom:link href="https://esbenbl.github.io/site_host/docs/methodology/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>hSBM</title>
+      <link>https://esbenbl.github.io/site_host/docs/methodology/hsbm_meth/hsbm_meth/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://esbenbl.github.io/site_host/docs/methodology/hsbm_meth/hsbm_meth/</guid>
+      <description>Hierachical Stochastic Block Model#hSBM briefly explained The model is used to identify prevalent topics in a text corpora, and it relies on integration of techniques used for community detection in networks (Gerlach et al. 2018). Another option for us could have been latent Dirichlet allocation (LDA), but hSBM has proven to perform better than the more widely used LDA (ibid). Topics can be identified by the hSBM by representing the text corpora as a bipartite network in which nodes are documents and words, and the weight of the edges connecting nodes are determined by word-occurrences in each document.</description>
+    </item>
+    
+    <item>
       <title>Louvain Modularity</title>
       <link>https://esbenbl.github.io/site_host/docs/methodology/Modularity/modularity/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

@@ -200,7 +200,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-775c8f3a0ae7cadabf98eb94d5f359b9" class="toggle" checked />
     <label for="section-775c8f3a0ae7cadabf98eb94d5f359b9" class="flex justify-between">
-      <a href="https://esbenbl.github.io/site_host/docs/Analysis/text_analysis/" class="">Text Analysis</a>
+      <a href="https://esbenbl.github.io/site_host/docs/Analysis/text_analysis/" class="">TF-IDF</a>
     </label>
   
 
@@ -263,19 +263,6 @@ https://github.com/alex-shpak/hugo-book
 
           
   <ul>
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="https://esbenbl.github.io/site_host/docs/Analysis/hsbm/topics/topics/" class="">hSBM Topics</a>
-  
-
-        </li>
-      
     
       
         <li>
@@ -372,6 +359,19 @@ https://github.com/alex-shpak/hugo-book
 
           
   <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://esbenbl.github.io/site_host/docs/methodology/hsbm_meth/hsbm_meth/" class="">hSBM</a>
+  
+
+        </li>
+      
     
       
         <li>
@@ -560,7 +560,10 @@ https://github.com/alex-shpak/hugo-book
     </tr>
   </tbody>
 </table>
-<p>Here, we writes something clever about the TF-stuff.</div><input type="radio" class="toggle" name="tabs-uniqueid" id="tabs-uniqueid-1"  />
+<p>Generally, the words with the highest TF scores seem somewhat intuitive and expected but also uninformative. For all the disciplines, some of the most prevalent words are &lsquo;university&rsquo; and some conjugation of the discipline itself, like <code>anthropology</code> for Anthropologists, <code>economics</code> for Economists and so on. This seems resonable as most of the Wikipedia-pages problem says something along the lines of &ldquo;{Name} is a {Discipline} at {some university}&rdquo;. <br><br></p>
+<p>The <code>multiple</code> category contains rather broad and generic words like &ldquo;social&rdquo;, &ldquo;work&rdquo;, &ldquo;society&rdquo;, and &ldquo;theory&rdquo;, which are quite hard to interpret.<br><br></p>
+<p>In conclusion, the TF scores do not bring much nuance to the disciplines. Therefore, we hope to find a more substantive distinction between the content of the disciplines by examining the TF-IDF.</p>
+</div><input type="radio" class="toggle" name="tabs-uniqueid" id="tabs-uniqueid-1"  />
   <label for="tabs-uniqueid-1">TF-IDF</label>
   <div class="book-tabs-content markdown-inner"><h1 id="tf-idf-of-the-scientific-disciplines">
   TF-IDF of the scientific disciplines
@@ -636,7 +639,13 @@ https://github.com/alex-shpak/hugo-book
     </tr>
   </tbody>
 </table>
-<p>Here, we writes something clever about the TF-IDF-stuff.</div></div>
+<p>Off the bat, the high scoring TF-IDF words carry more distinctive meaning between each discipline than the TF words. <br><br></p>
+<p>Four of the five highest ranking words for anthropology are the names of indigenous groups, while the fifth word - <code>gorilla</code> - probably relates to the niche field of biological anthropology. <br><br></p>
+<p>For the economists, <code>econometric(s)</code> - the quantitative application of statistical models - is prevalent, along with <code>macroeconomic(s)</code>. Further, <code>keynesian</code> is a distinguishing word of the economic discipline, referring to the analytical approach of John Maynard Keynes, who is one of the 
+  <a href="https://esbenbl.github.io/site_host/docs/Analysis/nx_characteristic/basic_stats/top_connected/most_connected/">highest degree nodes in our network</a>. <br><br></p>
+<p>The psychologists have words such as psychoanalytic, psychotherapy, Jungian, therapy and apa (American psychological association), which is also sensible. Sociologists have sociologie and gemeinschaft, which is probably a relic from the extensive German tradition within sociology. <br><br></p>
+<p>Regarding the “Multiple” category, we see a mix of words. <a href="https://en.wikipedia.org/wiki/Ibn_Khaldun" target="_blank">Khaldun</a> is probably a reference to the Muslim philosopher of the 1400 century, who was the founder of the proto-disciplines that would later become sociology and economics. Further, ‘Multiple’ also contains the words <code>habitus</code>, which is a concept from Bourdieu (sociologist/anthropologist), and <code>psychoanalytic</code> a core concept from Freud (psychologist). The dissimilarity of these three words illustrates that the ‘Multiple’ category is indeed mixed.</p>
+</div></div>
 
 </article>
  

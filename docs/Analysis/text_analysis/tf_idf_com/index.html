@@ -199,7 +199,7 @@ https://github.com/alex-shpak/hugo-book
   
     <input type="checkbox" id="section-775c8f3a0ae7cadabf98eb94d5f359b9" class="toggle" checked />
     <label for="section-775c8f3a0ae7cadabf98eb94d5f359b9" class="flex justify-between">
-      <a href="https://esbenbl.github.io/site_host/docs/Analysis/text_analysis/" class="">Text Analysis</a>
+      <a href="https://esbenbl.github.io/site_host/docs/Analysis/text_analysis/" class="">TF-IDF</a>
     </label>
   
 
@@ -262,19 +262,6 @@ https://github.com/alex-shpak/hugo-book
 
           
   <ul>
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="https://esbenbl.github.io/site_host/docs/Analysis/hsbm/topics/topics/" class="">hSBM Topics</a>
-  
-
-        </li>
-      
     
       
         <li>
@@ -371,6 +358,19 @@ https://github.com/alex-shpak/hugo-book
 
           
   <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://esbenbl.github.io/site_host/docs/methodology/hsbm_meth/hsbm_meth/" class="">hSBM</a>
+  
+
+        </li>
+      
     
       
         <li>
@@ -683,7 +683,10 @@ https://github.com/alex-shpak/hugo-book
     </tr>
   </tbody>
 </table>
-<p>Here, we writes something clever about the TF-stuff.</div><input type="radio" class="toggle" name="tabs-uniqueid" id="tabs-uniqueid-1"  />
+<p>Looking into the larger communities which we analyzed in the past section on communities, the TF-scores seem as generic and broad as the TF-scores for the disciplines. <br><br></p>
+<p>Considering the most prevalent words of the 7 largest communities, we clearly see that the community partition is more or less aligned with the disciplines, which also became apparent when we compared the community and discipline network]. It is quite easy to see that the largest and third largest community are economists, <code>Talcott Parsons - John Dewey - Erving Goffman</code> are sociologists, <code>Wilhelm Wundt - Jean Piaget - Carl Jung</code> are psychologists, <code>Franz Boas - Karl Polanyi - Bronisław Malinowski</code> are anthropologists, and <code>Samuel P. Huntington - Kenneth Waltz - Henry Kissinger</code> are political scientists. <br><br></p>
+<p>We will quickly move to the more nuanced TF-IDF scores to look for further distinctions.</p>
+</div><input type="radio" class="toggle" name="tabs-uniqueid" id="tabs-uniqueid-1"  />
   <label for="tabs-uniqueid-1">TF-IDF</label>
   <div class="book-tabs-content markdown-inner"><h1 id="tf-idf-of-the-scientific-disciplines">
   TF-IDF of the scientific disciplines
@@ -887,7 +890,25 @@ https://github.com/alex-shpak/hugo-book
     </tr>
   </tbody>
 </table>
-<p>Here, we writes something clever about the TF-IDF-stuff.</div></div>
+<p>Regarding the two economic communities - <code>Keynes, Smith, and Friedman</code> and <code>Kahneman, Acemoglu, and Mankiw</code> - we find a miniscule nuance between the two, as the former contains word like <code>price</code>, and <code>rate</code>, while the latter uses words like <code>econometrics</code>, <code>auction</code>, and <code>nobel</code>. However, it is difficult to infer a general distinction between the two, and it would appear that 
+  <a href="https://esbenbl.github.io/site_host/docs/Analysis/nx_characteristic/community/community/#community-network">the community partition based on the network&rsquo;s wiring</a> is not substantially reflected in the content of the Wikipedia-pages. <br><br></p>
+<p>As discussed earlier, it is quite apparent that the largest communities reflect and distinguish between the social disciplines quite well:<br><br></p>
+<ul>
+<li>
+<p><code>Talcott Parsons - John Dewey - Erving Goffman</code> is sociological with words like <code>sociology</code> and <code>chicago</code> (the Chicago School is a theoretical tradition in sociology).  <br><br></p>
+</li>
+<li>
+<p><code>Wilhelm Wundt - Jean Piaget - Carl Jung</code> is psychological, with words like <code>psychology</code>, <code>child</code>, <code>mental</code>, and <code>experiment</code> <br><br></p>
+</li>
+<li>
+<p><code>Franz Boas - Karl Polanyi - Bronisław Malinowski</code> is anthropological, with words like <code>anthropological</code>, <code>culture</code>, and <code>language</code>. <br><br></p>
+</li>
+<li>
+<p><code>Samuel P. Huntington - Kenneth Waltz - Henry Kissinger</code> are political scientists, with words like <code>war</code>, <code>soviet</code>, and <code>state</code>. <br><br></p>
+</li>
+</ul>
+<p>The <code>Marx - Freud - Weber</code> community has both <code>philosophy</code> and <code>philosopher</code> as central concepts and therefore quite hard to place within one singular discipline. Perhaps, that would be a sensible distinction to add to the catalogue of social science disciplines.</p>
+</div></div>
 
 </article>
  
