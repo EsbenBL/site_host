@@ -3,14 +3,10 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="We plot a bipartite scientist-topic network with edge weights based on the XX probabilities from the hSBM model. The nodes and edges are colored based on the identified communties from this network.
-Alright, so.. it&rsquo;s a hairball. To have a better shot at observing some kind of structure, we remove edges with weights below the 75%-quartile. Here we go;
-That&rsquo;s better, Ganon!">
+<meta name="description" content="hSBM Community Network#We plot a bipartite scientist-topic network with edge weights colored by community. We have chosen to only visualize the upper quartile network, as the other network was too dense to analyze. By coloring scientists by community, we can confirm some of the tendencies we found in the bar plots of topical distributions across communities. As previously we prioritize to comment on the largest communities. The two communities of economists, namely Keynes-Smith-Friedman and Kahneman-Acemoglu-Mankiw appear to be closely intertwined, and it does not seem meaningful to consider the communities as clearly distinct based on their contributions to our selected topics.">
 <meta name="theme-color" content="#FFFFFF">
 <meta name="color-scheme" content="light dark"><meta property="og:title" content="hSBM Community Network" />
-<meta property="og:description" content="We plot a bipartite scientist-topic network with edge weights based on the XX probabilities from the hSBM model. The nodes and edges are colored based on the identified communties from this network.
-Alright, so.. it&rsquo;s a hairball. To have a better shot at observing some kind of structure, we remove edges with weights below the 75%-quartile. Here we go;
-That&rsquo;s better, Ganon!" />
+<meta property="og:description" content="hSBM Community Network#We plot a bipartite scientist-topic network with edge weights colored by community. We have chosen to only visualize the upper quartile network, as the other network was too dense to analyze. By coloring scientists by community, we can confirm some of the tendencies we found in the bar plots of topical distributions across communities. As previously we prioritize to comment on the largest communities. The two communities of economists, namely Keynes-Smith-Friedman and Kahneman-Acemoglu-Mankiw appear to be closely intertwined, and it does not seem meaningful to consider the communities as clearly distinct based on their contributions to our selected topics." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://esbenbl.github.io/site_host/docs/Analysis/hsbm/hsbm_nx/hsbm_com_nx/hsbm_com_nx/" /><meta property="article:section" content="docs" />
 
@@ -371,19 +367,6 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="https://esbenbl.github.io/site_host/docs/methodology/hsbm_meth/hsbm_meth/" class="">hSBM</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
     <a href="https://esbenbl.github.io/site_host/docs/methodology/Modularity/modularity/" class="">Louvain Modularity</a>
   
 
@@ -398,6 +381,19 @@ https://github.com/alex-shpak/hugo-book
 
   
     <a href="https://esbenbl.github.io/site_host/docs/methodology/tf_idf_method/tf_idf/" class="">TF and TF-IDF</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://esbenbl.github.io/site_host/docs/methodology/hsbm_meth/hsbm_meth/" class="">hSBM</a>
   
 
         </li>
@@ -476,14 +472,18 @@ https://github.com/alex-shpak/hugo-book
 
       
       
-  <article class="markdown"><p>We plot a bipartite scientist-topic network with edge weights based on the XX probabilities from the hSBM model. The nodes and edges are colored based on the identified communties from 
-  <a href="https://esbenbl.github.io/site_host/docs/Analysis/nx_characteristic/community/community/#community-network">this network</a>.</p>
-<p>
-  <img src="https://esbenbl.github.io/site_host/bipartite_com_all.png" alt="Bipartite Scientist-Topic Network" /></p>
-<p>Alright, so.. it&rsquo;s a hairball. To have a better shot at observing some kind of structure, we remove edges with weights below the 75%-quartile. Here we go;</p>
-<p>
+  <article class="markdown"><h1 id="hsbm-community-network">
+  hSBM Community Network
+  <a class="anchor" href="#hsbm-community-network">#</a>
+</h1>
+<p>We plot a bipartite scientist-topic network with edge weights colored by community.
+
   <img src="https://esbenbl.github.io/site_host/bipartite_com_up.png" alt="Bipartite Scientist-Topic Network" /></p>
-<p>That&rsquo;s better, Ganon!</p>
+<p>We have chosen to only visualize the upper quartile network, as the other network was too dense to analyze. By coloring scientists by community, we can confirm some of the tendencies we found in the bar plots of topical distributions across communities. As previously we prioritize to comment on the largest communities. <br><br>
+The two communities of economists, namely <code>Keynes-Smith-Friedman</code> and <code>Kahneman-Acemoglu-Mankiw</code> appear to be closely intertwined, and it does not seem meaningful to consider the communities as clearly distinct based on their contributions to our selected topics. Thus even using the hSBM topics we still do not find any distinctions between, as we also concluded in 
+  <a href="https://esbenbl.github.io/site_host/docs/Analysis/text_analysis/">the TF-IDF section</a> in which we also analyzed the communities TF-IDF scores.  <br><br>
+The scientist-nodes within the three communities <code>Parsons-Dewey-Goffman</code>, <code>Wundt-Piaget-Jung</code>, and <code>Boas-Polanyi-Malinowski</code> containing respectively majorities of sociologists, psychologists, and anthropologists cluster in the network centered around related topic-nodes. <br><br>
+The second largest community of “Marx, Freud, and Weber” is on the other hand not clustering like the above-mentioned communities. Scientist-nodes from this community appear to be spread over most of the network connecting to many different topics but especially near the Philosophy”-topic node. Besides this topical association scientists represented in this community do not appear to be united by other topics. This community contains scientists from different disciplines including some of the old classical theorists such as Karl Marx, the central hub of the main network, Sigmund Freud, and Max Weber. When we described the power law distribution of the indegree nodes, these were also mentioned as they have some of the highest indegrees indicating high influence, and also that social scientists across disciplines have gathered inspiration from these social scientists.</p>
 </article>
  
       

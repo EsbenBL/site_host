@@ -4,7 +4,8 @@
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="hSBM Networks!#We&rsquo;re back at network!
-Now that we have identified topics, and explored their distribution both within the disciplines and communities, we can return to some network stuff!">
+Now that we have identified topics, and explored their distribution both within the disciplines and communities, we can return to some network stuff!
+In order to further examine the contributions to topics across disciplines and communities, we create a bipartite network in which we include nodes for scientists and nodes for topics. We use the probabilities generated through the hSBM as edges. This means that two nodes are connected if the probability of the scientist’s document is contributing to the specific topic is higher than 0.">
 <meta name="theme-color" content="#FFFFFF">
 <meta name="color-scheme" content="light dark"><meta property="og:title" content="hSBM Networks!" />
 <meta property="og:description" content="" />
@@ -367,19 +368,6 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="https://esbenbl.github.io/site_host/docs/methodology/hsbm_meth/hsbm_meth/" class="">hSBM</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
     <a href="https://esbenbl.github.io/site_host/docs/methodology/Modularity/modularity/" class="">Louvain Modularity</a>
   
 
@@ -394,6 +382,19 @@ https://github.com/alex-shpak/hugo-book
 
   
     <a href="https://esbenbl.github.io/site_host/docs/methodology/tf_idf_method/tf_idf/" class="">TF and TF-IDF</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://esbenbl.github.io/site_host/docs/methodology/hsbm_meth/hsbm_meth/" class="">hSBM</a>
   
 
         </li>
@@ -478,6 +479,9 @@ https://github.com/alex-shpak/hugo-book
 </h1>
 <p>We&rsquo;re back at network!</p>
 <p>Now that we have identified topics, and explored their distribution both within the disciplines and communities, we can return to some network stuff!</p>
+<p>In order to further examine the contributions to topics across disciplines and communities, we create a bipartite network in which we include nodes for scientists and nodes for topics. We use the probabilities generated through the hSBM as edges. This means that two nodes are connected if the probability of the scientist’s document is contributing to the specific topic is higher than 0. This will result in a dense network, as a lot of documents have probabilities larger than 0 of belonging to most of the topics. We therefore also create a network in which we utilize the weight attributes of the edges and only include edges with weights above the upper quartile. We therefore end up with two bipartite networks, one with all the weighted edges and one with only the strongest weighted edges.
+<br><br>
+These bipartite networks allow us to further explore how scientists contribute to topics, and examine clusters of both scientist- and topic-nodes.</p>
 </article>
  
       

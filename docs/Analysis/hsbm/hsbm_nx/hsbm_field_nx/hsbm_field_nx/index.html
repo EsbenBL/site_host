@@ -3,14 +3,10 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="We plot a bipartite scientist-topic network with edge weights based on the XX probabilities from the hSBM model. The nodes and edges are colored based on their scientific discipline.
-Alright, so.. it&rsquo;s a hairball. To have a better shot at observing some kind of structure, we remove edges with weights below the 75%-quartile. Here we go;
-That&rsquo;s better, Ganon!">
+<meta name="description" content="hSBM Discipline Network#We plot a bipartite scientist-topic network with edge weights colored by discipline. The network is very dense and has a hairball-like structure. Though, we can identify disciplinary clusters of psychologists, economists, and sociologists close to the corresponding topic-nodes, “Psychology”, “Sociology”, and “Economics”, the rest of the topics appear to cluster randomly in the middle of the network. To thin out the hairball, we plot only edges with weights above the upper quartile, and here more clear patterns are visible.">
 <meta name="theme-color" content="#FFFFFF">
 <meta name="color-scheme" content="light dark"><meta property="og:title" content="hSBM Discipline Network" />
-<meta property="og:description" content="We plot a bipartite scientist-topic network with edge weights based on the XX probabilities from the hSBM model. The nodes and edges are colored based on their scientific discipline.
-Alright, so.. it&rsquo;s a hairball. To have a better shot at observing some kind of structure, we remove edges with weights below the 75%-quartile. Here we go;
-That&rsquo;s better, Ganon!" />
+<meta property="og:description" content="hSBM Discipline Network#We plot a bipartite scientist-topic network with edge weights colored by discipline. The network is very dense and has a hairball-like structure. Though, we can identify disciplinary clusters of psychologists, economists, and sociologists close to the corresponding topic-nodes, “Psychology”, “Sociology”, and “Economics”, the rest of the topics appear to cluster randomly in the middle of the network. To thin out the hairball, we plot only edges with weights above the upper quartile, and here more clear patterns are visible." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://esbenbl.github.io/site_host/docs/Analysis/hsbm/hsbm_nx/hsbm_field_nx/hsbm_field_nx/" /><meta property="article:section" content="docs" />
 
@@ -371,19 +367,6 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="https://esbenbl.github.io/site_host/docs/methodology/hsbm_meth/hsbm_meth/" class="">hSBM</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
     <a href="https://esbenbl.github.io/site_host/docs/methodology/Modularity/modularity/" class="">Louvain Modularity</a>
   
 
@@ -398,6 +381,19 @@ https://github.com/alex-shpak/hugo-book
 
   
     <a href="https://esbenbl.github.io/site_host/docs/methodology/tf_idf_method/tf_idf/" class="">TF and TF-IDF</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="https://esbenbl.github.io/site_host/docs/methodology/hsbm_meth/hsbm_meth/" class="">hSBM</a>
   
 
         </li>
@@ -476,13 +472,19 @@ https://github.com/alex-shpak/hugo-book
 
       
       
-  <article class="markdown"><p>We plot a bipartite scientist-topic network with edge weights based on the XX probabilities from the hSBM model. The nodes and edges are colored based on their scientific discipline.</p>
-<p>
+  <article class="markdown"><h1 id="hsbm-discipline-network">
+  hSBM Discipline Network
+  <a class="anchor" href="#hsbm-discipline-network">#</a>
+</h1>
+<p>We plot a bipartite scientist-topic network with edge weights colored by discipline.
+
   <img src="https://esbenbl.github.io/site_host/Bipartite_dis_all.png" alt="Bipartite Scientist-Topic Network" /></p>
-<p>Alright, so.. it&rsquo;s a hairball. To have a better shot at observing some kind of structure, we remove edges with weights below the 75%-quartile. Here we go;</p>
+<p>The network is very dense and has a hairball-like structure. Though, we can identify disciplinary clusters of psychologists, economists, and sociologists close to the corresponding topic-nodes, “Psychology”, “Sociology”, and “Economics”, the rest of the topics appear to cluster randomly in the middle of the network. To thin out the hairball, we plot only edges with weights above the upper quartile, and here more clear patterns are visible.</p>
 <p>
   <img src="https://esbenbl.github.io/site_host/bipartite_dis_up.png" alt="Bipartite Scientist-Topic Network" /></p>
-<p>That&rsquo;s better, Ganon!</p>
+<p>We can see that there are clusters of scientists in disciplines. These scientist-clusters vary in size with economists and sociologists forming the biggest clusters. However, this can be explained by the fact that scientists from these disciplines are more frequently represented in the network than e.g., anthropologists. Likewise, the position of topic-nodes also becomes interesting in this network as it allows us to examine the topics in relation to each other. Topics-nodes are placed close to each other if scientist-nodes in the same area have edges attached to them. This means that the topic-nodes representing <code>Economics</code>, <code>Market Mechanisms</code> and <code>Finance</code> placed in proximity are related topics, which implies that scientists represented by scientist-nodes nearby, in this case economists, are likely to contribute to more than one of these topics. Likewise, there is a cluster of the topic-nodes: <code>Race and Gender</code>, <code>History and Society</code>, and <code>Religious Movements</code> suggesting that sociologists are more likely to contribute to more than one of these. <br><br></p>
+<p>The bipartite network gives us an overview of where disciplines intersect through topics. Furthermore, it confirms some of the tendencies, we found in the bar plots above. We find that some topics-nodes are placed within the disciplinary scientist-clusters, such as <code>Anthropology</code> and <code>Cognition</code>. Other topic-nodes are placed in the intersections of scientist-node clusters binding together scientists of different fields. This is true for the topic-nodes <code>Government Policy</code> and <code>History and Society</code> that are on the borders of the clusters of respectively economists and political scientists, and sociologists and anthropologists. The topic-node <code>World Order</code> differs significantly from the others by being placed in the center of the network with edges from scientist-nodes from all other disciplines. There are no other topic-nodes placed nearby, thus, this is the only of the selected topics that appear to connect different scientist-nodes to such a large degree. <br><br></p>
+<p>We move on to examine how the identified communities appear in the bipartite network by coloring the scientist-nodes by community instead of discipline. We choose to only show the network with edge-weights above the upper quartile as we have argued that this generated the most meaningful network. <br><br></p>
 </article>
  
       

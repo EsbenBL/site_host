@@ -11,9 +11,16 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://esbenbl.github.io/site_host/docs/Analysis/hsbm/hsbm_nx/hsbm_field_nx/hsbm_field_nx/</guid>
-      <description>We plot a bipartite scientist-topic network with edge weights based on the XX probabilities from the hSBM model. The nodes and edges are colored based on their scientific discipline.
-Alright, so.. it&amp;rsquo;s a hairball. To have a better shot at observing some kind of structure, we remove edges with weights below the 75%-quartile. Here we go;
-That&amp;rsquo;s better, Ganon!</description>
+      <description>hSBM Discipline Network#We plot a bipartite scientist-topic network with edge weights colored by discipline. The network is very dense and has a hairball-like structure. Though, we can identify disciplinary clusters of psychologists, economists, and sociologists close to the corresponding topic-nodes, “Psychology”, “Sociology”, and “Economics”, the rest of the topics appear to cluster randomly in the middle of the network. To thin out the hairball, we plot only edges with weights above the upper quartile, and here more clear patterns are visible.</description>
+    </item>
+    
+    <item>
+      <title>Louvain Modularity</title>
+      <link>https://esbenbl.github.io/site_host/docs/methodology/Modularity/modularity/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://esbenbl.github.io/site_host/docs/methodology/Modularity/modularity/</guid>
+      <description>Louvain Modularity#The Louvain algorithm partitions the network by finding the partition that optimizes modularity, defined as (Barabási eq. 9.12): \(M = \sum_{c=1}^{n_c}\left[\frac{L_c}{L}-\left(\frac{k_c}{2L}\right)^2\right]\), where \(n_c\)is the number of communities/partitions, \(L\)is the total number of links in the network, \(L_c\)is the total number of links within community \(C_c\), and \(k_c\)is the total degree of the nodes in this community (including links to nodes outside community \(C_c\)).</description>
     </item>
     
     <item>
@@ -22,9 +29,16 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://esbenbl.github.io/site_host/docs/Analysis/hsbm/hsbm_nx/hsbm_com_nx/hsbm_com_nx/</guid>
-      <description>We plot a bipartite scientist-topic network with edge weights based on the XX probabilities from the hSBM model. The nodes and edges are colored based on the identified communties from this network.
-Alright, so.. it&amp;rsquo;s a hairball. To have a better shot at observing some kind of structure, we remove edges with weights below the 75%-quartile. Here we go;
-That&amp;rsquo;s better, Ganon!</description>
+      <description>hSBM Community Network#We plot a bipartite scientist-topic network with edge weights colored by community. We have chosen to only visualize the upper quartile network, as the other network was too dense to analyze. By coloring scientists by community, we can confirm some of the tendencies we found in the bar plots of topical distributions across communities. As previously we prioritize to comment on the largest communities. The two communities of economists, namely Keynes-Smith-Friedman and Kahneman-Acemoglu-Mankiw appear to be closely intertwined, and it does not seem meaningful to consider the communities as clearly distinct based on their contributions to our selected topics.</description>
+    </item>
+    
+    <item>
+      <title>TF and TF-IDF</title>
+      <link>https://esbenbl.github.io/site_host/docs/methodology/tf_idf_method/tf_idf/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://esbenbl.github.io/site_host/docs/methodology/tf_idf_method/tf_idf/</guid>
+      <description>TF and TF-IDF#According to Wiki, there is a variaty of ways to calculate TF-IDF. We calculate TF-IDF in what appears to be the most conventional way, where the raw count, \( f_{t,d}\), of term \(t\)in document \( d\)is standardized/adjusted by the document length, \( \sum_{t&amp;#39;\in{d}}f_{t&amp;#39;,d}\), e.i. adjusted by the raw count of all the terms, \( t&amp;#39;\), in \(d\).</description>
     </item>
     
     <item>
@@ -33,8 +47,8 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://esbenbl.github.io/site_host/docs/Analysis/hsbm/topics_disciplines/topics_field/</guid>
-      <description>Below, we have plotted the distribution of the 21 topics within each of the scientific fields.
-</description>
+      <description>Topics within Disciplines#Below, we have plotted the distribution of the 21 topics within each of the scientific fields.
+From the bar plots above, we infer that the contributions from each discipline vary dependent of the specific topic. Some topics have scientists from just one discipline as main contributors. This is especially true for the topics with titles we have named a specific discipline; Sociology, Anthropology, Economics, and Psychology.</description>
     </item>
     
     <item>
@@ -43,8 +57,8 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://esbenbl.github.io/site_host/docs/Analysis/hsbm/topics_communities/topic_com/</guid>
-      <description>Below, we have plot the distribution of the 21 topics within each of the identified communities.
-</description>
+      <description>Topics within Communities#Below, we have plot the distribution of the 21 topics within each of the identified communities.
+In our examination of the plots above, we mainly consider the largest communities, that we have previously described at the start of the analysis. The x-axis in the plots is sorted such that the largest communities are on the left. From the plots, we infer that the second largest community of Marx-Freud-Weber is the main contributor to the topic Philosophy.</description>
     </item>
     
     <item>
@@ -105,15 +119,6 @@ Both the in- and out-degree distribution appear to be powerlaw distributed, mean
     </item>
     
     <item>
-      <title>Louvain Modularity</title>
-      <link>https://esbenbl.github.io/site_host/docs/methodology/Modularity/modularity/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://esbenbl.github.io/site_host/docs/methodology/Modularity/modularity/</guid>
-      <description>Louvain Modularity#The Louvain algorithm partitions the network by finding the partition that optimizes modularity, defined as (Barabási eq. 9.12): \(M = \sum_{c=1}^{n_c}\left[\frac{L_c}{L}-\left(\frac{k_c}{2L}\right)^2\right]\), where \(n_c\)is the number of communities/partitions, \(L\)is the total number of links in the network, \(L_c\)is the total number of links within community \(C_c\), and \(k_c\)is the total degree of the nodes in this community (including links to nodes outside community \(C_c\)).</description>
-    </item>
-    
-    <item>
       <title>Most Connected Nodes</title>
       <link>https://esbenbl.github.io/site_host/docs/Analysis/nx_characteristic/basic_stats/top_connected/most_connected/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -131,15 +136,6 @@ Looking at the most connected nodes with regard to in-degree, we see many of the
       
       <guid>https://esbenbl.github.io/site_host/docs/the_project/Preprocess/Preproces/</guid>
       <description>Proprocessing the data#To construct this &amp;ldquo;community&amp;rdquo; of social scientists, we found inspiration by examining the Faculty of Social Science at Copenhagen University. The Social Science faculty have five overall departments: Sociology, Psychology, Economy, Anthropology, and Political Science. For each of these five categories we have a list of scientists on wikipedia. We used these five lists of scientists to find and all the scientists in our final dataset.</description>
-    </item>
-    
-    <item>
-      <title>TF and TF-IDF</title>
-      <link>https://esbenbl.github.io/site_host/docs/methodology/tf_idf_method/tf_idf/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://esbenbl.github.io/site_host/docs/methodology/tf_idf_method/tf_idf/</guid>
-      <description>TF and TF-IDF#According to Wiki, there is a variaty of ways to calculate TF-IDF. We calculate TF-IDF in what appears to be the most conventional way, where the raw count, \( f_{t,d}\), of term \(t\)in document \( d\)is standardized/adjusted by the document length, \( \sum_{t&amp;#39;\in{d}}f_{t&amp;#39;,d}\), e.i. adjusted by the raw count of all the terms, \( t&amp;#39;\), in \(d\).</description>
     </item>
     
   </channel>

@@ -11,9 +11,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://esbenbl.github.io/site_host/docs/Analysis/hsbm/hsbm_nx/hsbm_field_nx/hsbm_field_nx/</guid>
-      <description>We plot a bipartite scientist-topic network with edge weights based on the XX probabilities from the hSBM model. The nodes and edges are colored based on their scientific discipline.
-Alright, so.. it&amp;rsquo;s a hairball. To have a better shot at observing some kind of structure, we remove edges with weights below the 75%-quartile. Here we go;
-That&amp;rsquo;s better, Ganon!</description>
+      <description>hSBM Discipline Network#We plot a bipartite scientist-topic network with edge weights colored by discipline. The network is very dense and has a hairball-like structure. Though, we can identify disciplinary clusters of psychologists, economists, and sociologists close to the corresponding topic-nodes, “Psychology”, “Sociology”, and “Economics”, the rest of the topics appear to cluster randomly in the middle of the network. To thin out the hairball, we plot only edges with weights above the upper quartile, and here more clear patterns are visible.</description>
     </item>
     
     <item>
@@ -22,9 +20,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://esbenbl.github.io/site_host/docs/Analysis/hsbm/hsbm_nx/hsbm_com_nx/hsbm_com_nx/</guid>
-      <description>We plot a bipartite scientist-topic network with edge weights based on the XX probabilities from the hSBM model. The nodes and edges are colored based on the identified communties from this network.
-Alright, so.. it&amp;rsquo;s a hairball. To have a better shot at observing some kind of structure, we remove edges with weights below the 75%-quartile. Here we go;
-That&amp;rsquo;s better, Ganon!</description>
+      <description>hSBM Community Network#We plot a bipartite scientist-topic network with edge weights colored by community. We have chosen to only visualize the upper quartile network, as the other network was too dense to analyze. By coloring scientists by community, we can confirm some of the tendencies we found in the bar plots of topical distributions across communities. As previously we prioritize to comment on the largest communities. The two communities of economists, namely Keynes-Smith-Friedman and Kahneman-Acemoglu-Mankiw appear to be closely intertwined, and it does not seem meaningful to consider the communities as clearly distinct based on their contributions to our selected topics.</description>
     </item>
     
   </channel>
